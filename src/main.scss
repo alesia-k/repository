@@ -17,10 +17,26 @@ body * {
   color: green;
 }
 
-.inline {
+.inline p {
   color: blue;
+  display: inline;
 }
 
 .bottom p {
   display: inline;
 }
+
+.blocks span {
+  display: block;
+}
+
+.inline {
+  border: double green;
+  padding: 16px;
+  padding-left: 0%;
+}
+
+.main-nav li {
+  display: inline;
+}
+
