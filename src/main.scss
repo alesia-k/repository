@@ -1,3 +1,23 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.main-nav,
+.blocks,
+.container {
+  border: 2px solid red;
+  display: inline-flexbox;
+}
+
+.sub-menu {
+  border: 2px dashed green;
+}
+
+.blocks p {
+  color: green;
+}
+
+.inline {
+  color: blue;
+}
+
