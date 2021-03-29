@@ -2,11 +2,18 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+
+.sub-menu,
+.blocks,
+.container {
+  width: 40%;
+}
+ 
 .main-nav,
 .blocks,
 .container {
-  border: 2px solid red;
   display: inline-flexbox;
+  border: 2px solid red;
 }
 
 .sub-menu {
@@ -22,10 +29,6 @@ body * {
   display: inline;
 }
 
-.bottom p {
-  display: inline;
-}
-
 .blocks span {
   display: block;
 }
@@ -33,7 +36,8 @@ body * {
 .inline {
   border: double green;
   padding: 16px;
-  padding-left: 0%;
+  padding-left:0%;
+  padding-right: 0px;
 }
 
 .main-nav li {
