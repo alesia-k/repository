@@ -7,27 +7,54 @@
     <title>First project</title>
     <script src="./js/main.js" defer></script>
   </head>
-  <body>
-
-      <header>
-<div class="container">
-header
-</div>
+  <body> 
+<header class="container">
+        header
       </header>
-
       <div class="banner">
         <div class="container">
           banner
         </div>
       </div>
-
       <main class="container">
        main content
-      </main>
       
+       <div class="for-columns">
+           <div class="for-columns__item">
+           @@include ('./partials/articles/_article.html', 
+             {"articleText": "Lorem ipsum dolor sit amet consectetur, elit. Vero fugit distinctio sunt, 
+           earum blanditiis eveniet minima saepe veniam repudiandae magni, asperiores ipsum. 
+           Minus libero quae quas deserunt itaque placeat recusandae!"
+        })  
+        </div>
+        <div class="for-columns__item">
+          @@include (
+            './partials/articles/_article.html',
+           {"articleText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit distinctio sunt, 
+          earum blanditiis eveniet minima saepe veniam repudiandae magni, asperiores ipsum. 
+          Minus libero quae quas deserunt itaque placeat recusandae!"
+        })
+     </div>
+     <div class="for-columns__item">
+      @@include (
+        './partials/articles/_article.html', {"articleText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit distinctio sunt, 
+          earum blanditiis eveniet minima saepe veniam repudiandae magni, asperiores ipsum. 
+          Minus libero quae quas deserunt itaque placeat recusandae!"
+        })
+ </div>
+
+ <div class="for-columns__item">
+       @@include (
+         './partials/articles/_article.html', {"articleText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit distinctio sunt, 
+          earum blanditiis eveniet minima saepe veniam repudiandae magni, asperiores ipsum. 
+          Minus libero quae quas deserunt itaque placeat recusandae!"
+        })
+</div>
+        </div>
+          </main>
       <footer>
         <div class="container">
-footer
+          footer
         </div>
       </footer>
   </body>
