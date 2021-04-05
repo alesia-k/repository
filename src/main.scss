@@ -33,3 +33,21 @@ footer {
 .two-columns__item {
   width: 50%;
 }
+
+.float-wrapper {
+  border: 5px solid tomato;
+}
+
+.float {
+  border: 1px solid green;
+  width: 150px;
+  height: 150px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
