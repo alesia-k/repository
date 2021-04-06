@@ -1,4 +1,5 @@
 @import "./partials/articles/article.scss";
+@import ".partials/team-card/_team-card.scss";
 
 body {
   margin: 0;
@@ -18,11 +19,12 @@ footer {
   background-color: #fb9c06;
 }
 
-.for-columns{
+.four-columns{
   display: flex;
+  flex-wrap: wrap;
 }
 
-.for-columns__item {
+.four-columns__item {
   width: 25%;
 }
 
@@ -34,20 +36,25 @@ footer {
   width: 50%;
 }
 
-.float-wrapper {
-  border: 5px solid tomato;
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.float {
-  border: 1px solid green;
-  width: 150px;
-  height: 150px;
+.three-columns__item {
+  width: 33.3%;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
 
-.float-left {
-  float: left;
+.header {
+text-decoration: underline;
+color: #fb9c06;
+text-align: center;
+padding: 40px 0 15px 0;
+font-size: 26px;
 }
 
-.float-right {
-  float: right;
+.header.dots.after {
+ content: "...";
 }
