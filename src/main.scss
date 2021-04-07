@@ -1,5 +1,5 @@
 @import "./partials/articles/article.scss";
-@import ".partials/team-card/_team-card.scss";
+@import "./partials/team-card/team-card.scss";
 
 body {
   margin: 0;
@@ -52,9 +52,11 @@ text-decoration: underline;
 color: #fb9c06;
 text-align: center;
 padding: 40px 0 15px 0;
-font-size: 26px;
+font-size: 40px;
 }
 
-.header.dots.after {
- content: "...";
+.header.dots:after {
+  content: "...";
+  display: inline-block;
+  text-decoration: underline;
 }
