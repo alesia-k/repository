@@ -68,3 +68,38 @@ footer {
   color: white;
   font-weight: normal;
 }
+
+.background-image {
+  background-image: url('/img/oranges.jpg');
+  background-size: cover;
+  height: 150px;
+}
+
+.rabbits p,.oranges p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fb9c06;
+  margin-left: 10px;
+  margin-right: 75%;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(71, 71, 71);
+  opacity: 80%;
+}
+
+.oranges p {
+  color: gray;
+  margin-left: 5px;
+  background-color: #fb9c06;
+}
+
+
+.three-columns__item span {
+  padding: 10px;
+}
+
+.description p {
+margin: 10px;
+padding: 5px;
+}

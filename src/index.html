@@ -8,16 +8,34 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body> 
-<header class="container">
-        header
-      </header>
+
+    <header class="container">
+      header
+    </header>
+
+    <div class="banner">
+      
+      <div class="container background-image">
+      <div class="banner's text">
+
+        <div class="rabbits">
+<p>Do you like rabbits?</p>
+</div>
+
+<div class="banner's text oranges">
+<p>Do you like oranges?</p>
+</div>
+
+      </div>
+      </div>
+    </div>
 
       
       <main class="container">
        <div class="four-columns">
            <div class="four-columns__item">
            @@include('./partials/articles/_article.html', {"articleText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit distinctio sunt, earum blanditiis eveniet minima saepe veniam repudiandae magni, asperiores ipsum. Minus libero quae quas deserunt itaque placeat recusandae!"})  
-        </div>
+          </div>
 
         <div class="four-columns__item">
            @@include('./partials/articles/_article.html', {"articleText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero fugit distinctio sunt, earum blanditiis eveniet minima saepe veniam repudiandae magni, asperiores ipsum. Minus libero quae quas deserunt itaque placeat recusandae!"})
@@ -39,6 +57,7 @@
           <div class="three-columns">
             <div class="three-columns__item">
               @@include('./partials/team-card/_team-card.html')
+            
             </div>
             <div class="three-columns__item">
               @@include('./partials/team-card/_team-card.html')
@@ -53,6 +72,7 @@
           <div class="header dots">
             Send us a message
           </div>
+         
           </section>
           </main>
       <footer>
