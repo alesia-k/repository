@@ -9,8 +9,27 @@
   </head>
   <body> 
 
-    <header class="container">
-      header
+    <header class="container__logo">
+
+      <div class="logo_menu_items">
+
+      <div class="logo_pic">
+        <img src="img/logo1.png" alt="logo orange rabbit" width="80px" height="80px">
+      </div>
+      
+      <div class="logo_text">
+<div class="orange_logo">orange</div>
+<div class="rabbit_logo">rabbit</div>
+</div>
+</div>
+<div class="navigation">
+
+
+</div>
+
+      </div>
+    </div>
+
     </header>
 
     <div class="banner">
@@ -56,14 +75,21 @@
 
           <div class="three-columns">
             <div class="three-columns__item">
-              @@include('./partials/team-card/_team-card.html')
+              @@include('./partials/team-card/_team-card.html', {"member team":"Hoof", 
+              "position":"-Lead Designer", "imagePath": "/img/horse.jpg", "about": "Hoof is our most talanted designer. However he's not the talkative type and would advise not getting on the wrong side of him."})
             
             </div>
             <div class="three-columns__item">
-              @@include('./partials/team-card/_team-card.html')
+              @@include('./partials/team-card/_team-card.html', 
+              {"member team": "Nibs", "position": "-CEO/Director", "imagePath": "/img/rabbit.jpg",
+              "about": "Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too."})
+
+              
             </div>
             <div class="three-columns__item">
-              @@include('./partials/team-card/_team-card.html')
+              @@include('./partials/team-card/_team-card.html', 
+              {"member team": "Squawk", "position": "Developer", "imagePath": "img/squawk.jpg",
+              "about": "Squawk is no social bunny. But when it comes to programming he stands out from the crowd."})
             </div>
           </div>
 
@@ -73,6 +99,33 @@
             Send us a message
           </div>
          
+<form>
+
+<div>
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+</div>
+
+
+<div>
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email">
+</div>
+
+<div>
+  <label for="message">Message:</label>
+  <textarea></textarea>
+</div>
+
+
+<button class="btn-submit">Submit</button>
+
+</form>
+
+
+
+
+
           </section>
           </main>
       <footer>
