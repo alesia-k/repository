@@ -1,5 +1,6 @@
 @import "./partials/articles/article.scss";
 @import "./partials/team-card/team-card.scss";
+@import "./sprairt.scss";
 
 body {
   margin: 0;
@@ -127,7 +128,6 @@ input {
 textarea {
   margin-left: 3px;
   font-size: 30px;
-  
 }
 
 .btn-submit {
@@ -149,22 +149,27 @@ background-color: gray;
   header.container__logo{
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid blue;
   display: flex;
 }
 
 .logo_menu_items {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
 }
 
+.logo_pic {
+  //background-image: url('./img/logo1.png');
+  //background-repeat: no-repeat;
+  //background-size: contain;
+  margin: 10px;
+  //width: 80px;
+  //height: 80px;
+}
 
 .logo_text {
 width: 120px;
 padding-left: 30px;
 padding-top: 10px;
-
 }
 
 .orange_logo, .rabbit_logo {
@@ -184,9 +189,20 @@ padding-top: 10px;
   text-transform: uppercase; 
 }
 
-.navigation {
-  border: 2px solid green;
-  //width: 60%;
-  margin-left: 20%;
+//.nav {
+  //width: 500px;
+  //margin: 0 auto;
+//}
 
+nav ul {
+  list-style: none;
+  display: flex;
+ 
 }
+
+nav li {
+  margin: 10px;
+}
+
+
+
