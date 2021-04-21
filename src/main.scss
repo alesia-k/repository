@@ -150,11 +150,15 @@ background-color: gray;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  border: 2px solid green;
+  justify-content: space-between;
 }
 
 .logo_menu_items {
   display: flex;
   justify-content: space-between;
+  border: 2px solid blue;
+  
 }
 
 .logo_pic {
@@ -170,6 +174,7 @@ background-color: gray;
 width: 120px;
 padding-left: 30px;
 padding-top: 10px;
+border: 2px solid red;
 }
 
 .orange_logo, .rabbit_logo {
@@ -189,20 +194,19 @@ padding-top: 10px;
   text-transform: uppercase; 
 }
 
-//.nav {
-  //width: 500px;
-  //margin: 0 auto;
-//}
+nav {
+  display: flex;
+  border: 2px solid yellow;
+}
 
 nav ul {
-  list-style: none;
   display: flex;
- 
+  list-style: none;
+  padding: 5px;
+  
 }
 
-nav li {
-  margin: 10px;
-}
+
 
 
 
