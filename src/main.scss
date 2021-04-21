@@ -1,3 +1,59 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.menu {
+  &__item {
+   width: 80px;
+   height: 80px;
+   //background-color: tomato;
+   position:relative;
+   cursor: pointer;
+   display: inline-block;
+
+
+  &:hover {
+    top: 2px;
+    left: 2px;
+  }
+  }
+
+  &__content {
+    display: none;
+    //width: 120px;
+    //height: 300px;
+    //background-color: lightgray;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    padding-left: 100%;
+  }
+}
+
+.menu__item:hover > .menu__content{
+  display: block;
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sub-menu__item {
+  padding: 7px 15px;
+}
+
+.menu__image {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.menu__description {
+  color: rgb(10, 158, 35);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
