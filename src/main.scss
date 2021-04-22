@@ -2,14 +2,22 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.header, .footer {
-  background-color: blue;
-  height: 100px;
+//.header, .footer {
+  //background-color: blue;
+  //height: 100px;
+//}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 0 0 100px;
 }
 
 .footer {
-  position: sticky;
-  
+  height: 100px;
+  position: relative;
+  margin: -100px 0 0;
 }
-
-
