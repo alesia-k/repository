@@ -1,24 +1,29 @@
 .bg-blog {
-    width: 60px; height: 60px;
+    width: 65px; height: 65px;
     background: url('/img/css_sprites-.png') -10px -10px;
+    cursor: pointer;
 }
 
 .bg-contact {
-    width: 60px; height: 60px;
+    width: 65px; height: 65px;
     background: url('/img/css_sprites-.png') -90px -10px;
+    cursor: pointer;
 }
 
 .bg-home {
-    width: 60px; height: 60px;
+    width: 65px; height: 65px;
     background: url('/img/css_sprites-.png') -10px -90px;
+    cursor: pointer;
 }
 
 .bg-info {
-    width: 60px; height: 58px;
+    width: 65px; height: 65px;
     background: url('/img/css_sprites-.png') -90px -90px;
+    cursor: pointer;
 }
 
 .bg-pen {
-    width: 60px; height: 57px;
+    width: 65px; height: 65px;
     background: url('/img/css_sprites-.png') -170px -10px;
+    cursor: pointer;
 }

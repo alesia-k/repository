@@ -7,17 +7,13 @@ body {
 }
 
 body * {
-  outline: 1px solid lightgrey;
+outline: 1px solid lightgrey;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
-}
-
-footer {
-  background-color: #fb9c06;
 }
 
 .four-columns{
@@ -63,6 +59,7 @@ font-size: 40px;
 }
 
 footer {
+  background-color: #fb9c06;
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
@@ -74,6 +71,7 @@ footer {
   background-image: url('/img/oranges.jpg');
   background-size: cover;
   height: 150px;
+  
 }
 
 .rabbits p,.oranges p {
@@ -94,7 +92,6 @@ footer {
   margin-left: 5px;
   background-color: #fb9c06;
 }
-
 
 .three-columns__item span {
   padding: 10px;
@@ -196,8 +193,6 @@ border: 2px solid red;
 
 nav {
   display: flex;
-  border: 2px solid yellow;
-  
 }
 
 nav ul {
@@ -206,13 +201,11 @@ nav ul {
   padding: 5px;
 }
 
-.bg-home  {
-  background: url("./img/css_sprites.png");
-  background-position: -10px -90px;
-  width: 240px;
-  height: 160px;
+li a {
+  padding: 0 10px;
+  text-decoration: none;
+  padding-left: 10px;
 }
- 
 
 
 
