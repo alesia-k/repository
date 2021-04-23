@@ -197,14 +197,22 @@ border: 2px solid red;
 nav {
   display: flex;
   border: 2px solid yellow;
+  
 }
 
 nav ul {
   display: flex;
   list-style: none;
   padding: 5px;
-  
 }
+
+.bg-home  {
+  background: url("img/css_sprites.png");
+  background-position: -10px -542px;
+  height: 60px;
+  width: 60px;
+}
+ 
 
 
 
