@@ -1,29 +1,27 @@
+.bg-info, .bg-blog, .bg-contact, .bg-home,.bg-info, .bg-pen {
+        margin: 5px;
+        cursor: pointer;
+        background-image: url('/img/css_sprites-.png');
+        width: 65px; 
+        height: 65px;
+    }
+
 .bg-blog {
-    width: 65px; height: 65px;
-    background: url('/img/css_sprites-.png') -10px -10px;
-    cursor: pointer;
+    background-position:  -10px -10px;
 }
 
 .bg-contact {
-    width: 65px; height: 65px;
-    background: url('/img/css_sprites-.png') -90px -10px;
-    cursor: pointer;
+    background-position: -90px -10px;
 }
 
 .bg-home {
-    width: 65px; height: 65px;
-    background: url('/img/css_sprites-.png') -10px -90px;
-    cursor: pointer;
+    background-position: -10px -90px;
 }
 
 .bg-info {
-    width: 65px; height: 65px;
-    background: url('/img/css_sprites-.png') -90px -90px;
-    cursor: pointer;
+    background-position: -90px -90px;
 }
 
 .bg-pen {
-    width: 65px; height: 65px;
-    background: url('/img/css_sprites-.png') -170px -10px;
-    cursor: pointer;
+    background-position: -170px -10px;
 }

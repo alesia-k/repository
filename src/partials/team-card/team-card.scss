@@ -4,6 +4,7 @@
         font-size: 14px;
         margin-bottom: 20px;
         text-align: center;
+        font-family: sans-serif;
     }
     
     &__position {
@@ -14,7 +15,11 @@
         border-radius: 50%;
         overflow: hidden;
         border: 2px solid #fcb544;
-        
+        padding: calc(50% - 2px);
+        font-size: 0;
+        background-position: 30%;
+        background-position-y: -1px;
+        background-size: cover;
         
         img {
         max-width: 100%;
