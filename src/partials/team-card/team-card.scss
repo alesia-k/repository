@@ -9,12 +9,13 @@
     
     &__position {
         color: #fcb544;
+        display: inline-block;
     }
 
     &__img {
         border-radius: 50%;
         overflow: hidden;
-        border: 4px solid #fcb544;
+        border: 2px solid #fcb544;
         padding: calc(50% - 2px);
         font-size: 0;
         background-position: 30%;
