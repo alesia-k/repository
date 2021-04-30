@@ -1,3 +1,39 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.picture {
+  //width: 200px;
+  //height: 150px;
+  display: inline-block;
+  font-size: 0;
+}
+
+.with-red-camera {
+  position: relative;
+&:hover:before {
+position: absolute;
+content: "";
+width: 20px;
+height: 15px;
+display: block;
+left: 8px;
+bottom: 8px;
+background-image: url(/img/camera-red.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 50%;
+z-index: 1;
+}
+
+&:hover:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  left: 13px;
+  bottom: 10px;
+ background-color: white;
+  }
+}
