@@ -1,3 +1,44 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/*чтобы видеть границы контейнеров */
+//div {  
+ // border: 1px solid black;
+//}
+
+.main-container {
+  float: left;
+  width: 900px;
+  margin-right: 300px;
+  position: relative;
+}
+
+.sidebar {
+  position: absolute;
+  float: right;
+  width: 300px;
+  margin-left: 900px;
+}
+
+.news-items {
+  width: 100%;
+  position: relative;
+  //box-sizing: border-box; /*может пригодиться*/
+}
+
+.last-news-articles {
+  float: left;
+  width: 60%;
+}
+
+.last-news-videos {
+ float: right;
+ width: 40%;
+}
