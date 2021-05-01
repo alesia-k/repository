@@ -8,11 +8,6 @@ body {
   padding: 50px 0;
 }
 
-/*чтобы видеть границы контейнеров */
-//div {  
- // border: 1px solid black;
-//}
-
 .main-container {
   float: left;
   width: 900px;
@@ -41,4 +36,41 @@ body {
 .last-news-videos {
  float: right;
  width: 40%;
+}
+
+.section-header--purple span{
+color: purple;
+}
+
+.section-header--center span:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+}
+
+
+.section-header {
+  position: relative;
+  text-align: center;
+}
+
+.line {
+  position: absolute;
+  border-bottom: 3px solid black;
+  bottom: 5px;
+  z-index: 1;
+  width: 100%;
+}
+
+.section-header span{
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  //text-align: center;
+ 
+  &:after {
+ content: "";
+ display: inline-block;
+ width: 8px;
+}
 }
