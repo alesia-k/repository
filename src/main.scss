@@ -1,4 +1,4 @@
-@import ".partials/random-videos/random-videos.scss";
+@import "./partials/random-videos/random-videos.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -75,4 +75,14 @@ color: purple;
  display: inline-block;
  width: 8px;
 }
+}
+
+.random-videos {
+  display: flex;
+  flex-direction: column;
+}
+
+.random-videos__item {
+display: inline-block;
+background-image: contain;
 }
