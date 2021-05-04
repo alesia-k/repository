@@ -6,7 +6,8 @@
 .video-img {
     width: 50%;
     float: left;
-    height: 70px;
+    height: 100px;
+    background-size: cover;
 }
 
 .video-description {
@@ -18,11 +19,10 @@
     line-height: 15px;
     text-align: left;
     vertical-align: middle;
-    margin-top: 35px;
-   //box-sizing: border-box;
 }
 
-.video-img {
-background-size: cover;
-height: 100px;
+.video-description p{
+    margin: 0 auto;
+    margin: 35px 2px;
 }
+
