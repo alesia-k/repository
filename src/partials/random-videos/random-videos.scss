@@ -8,6 +8,7 @@
     float: left;
     height: 100px;
     background-size: cover;
+  
 }
 
 .video-description {
@@ -26,3 +27,44 @@
     margin: 35px 2px;
 }
 
+.random-videos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .random-videos__item {
+  display: inline-block;
+  background-image: contain;
+  }
+
+  .with-camera {
+      position: relative;
+  }
+
+.with-camera:before {
+content: "";
+width: 20px;
+height: 15px;
+position: absolute;
+display: block;
+left: 8px;
+bottom: 8px;
+background-image: url("./img/camera-purple.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 50%;
+background-color: white;
+//z-index: 0;
+}
+
+.with-camera:after {
+    content: "";
+    width: 22px;
+    height: 17px;
+    position: absolute;
+    display: block;
+    left: 8px;
+    bottom: 8px;
+    background-color: white;
+    //z-index: 1;
+    }
