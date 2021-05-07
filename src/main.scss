@@ -1,4 +1,5 @@
 @import "./partials/random-videos/random-videos.scss";
+@import "./partials/main_news/main_news.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -77,12 +78,26 @@ color: purple;
 }
 }
 
-.random-videos {
-  display: flex;
-  flex-direction: column;
+.more_videos {
+  cursor: pointer;
+  color: rgb(11, 167, 219);
 }
 
-.random-videos__item {
-display: inline-block;
-background-image: contain;
+.more_videos:after {
+ content: "\2192";
+ display: inline-block;
+ width: 10px;
+}
+
+.black_line {
+  position: absolute;
+  border-bottom: 5px solid black;
+  bottom: 5px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.main-news {
+  width: 50%;
+  border: 2px solid red;
 }

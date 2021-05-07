@@ -12,17 +12,18 @@
 <body>
 
   <wrapper>
+<header class>
 
-    <div class="main-container">
-      Main container
-
+    <div class="navigation">
       <nav>
-        navigation
+      navigation
       </nav>
 
       <div class="main-news">
-        main news
+        @@include('./partials/main_news/_main_news.html', {"newsPicturePath": "img/main-pic.png", "caption": "Jurden Klopp makes a sexy Liverpool", "text": "Liverpool outcast Jose Enrique set to be handed lifeline by Jurden Klopp"})
+
       </div>
+    </header>
 
       <div class="news-items">
 
@@ -64,6 +65,14 @@
         </div>
         <div class="random-videos__item with-camera">
           @@include('./partials/random-videos/_random-videos.html', {"imgPath": "img/blondy.png", "description": "На дополнительном кастинге Хочу в ВИАГРУ девушек просили"})
+        </div>
+        
+        <div class="more_videos">
+          More videos
+        </div>
+
+        <div class="black_line">
+        
         </div>
         
       </div>

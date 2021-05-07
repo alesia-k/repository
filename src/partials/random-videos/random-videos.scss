@@ -1,6 +1,7 @@
 .video-columns {
     width: 100%;
     box-sizing: border-box;
+
 }
 
 .video-img {
@@ -54,17 +55,20 @@ background-repeat: no-repeat;
 background-size: contain;
 background-position: 50%;
 background-color: white;
-//z-index: 0;
+z-index: 6;
 }
 
 .with-camera:after {
     content: "";
-    width: 22px;
-    height: 17px;
+    width: 25px;
+    height: 20px;
     position: absolute;
     display: block;
-    left: 8px;
-    bottom: 8px;
+    left: 5px;
+    bottom: 5px;
     background-color: white;
-    //z-index: 1;
+    border-radius: 5px;
+    z-index: 5;
     }
+
+    

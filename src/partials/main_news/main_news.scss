@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+}
+
+.news__text,.text{
+    display: inline-block;
+    float: right;
+    position: relative;
+    bottom: 0;
+}
+
+.news__img {
+    flex-basis: 40%;
+    max-width: 100%;
+    max-height: 100%;
+}
