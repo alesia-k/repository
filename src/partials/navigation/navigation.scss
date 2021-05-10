@@ -1,0 +1,26 @@
+.navigation {
+    background-color: rgba(31, 30, 30, 0.438);
+    width: 900px;
+    height: 30px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 5px 15px;
+
+&:hover {
+    content: "";
+    background-color: rgb(36, 36, 36);
+}
+}
+ 
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+
+&:hover {
+  content: "";
+  color: white;
+ }
+}

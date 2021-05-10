@@ -15,33 +15,59 @@
 <header class>
 
     <div class="navigation">
+
       <nav>
-      navigation
+<ul>
+
+  <li>
+<div class="first"></div>
+<a href="#">Hot themes</a>
+  </li>
+
+  <li>
+<div class="second"></div>
+<a href="#">EURO-2016 Playoffs</a>
+  </li>
+
+  <li>
+    <div class="third"></div>
+    <a href="#">El'Classico</a>
+  </li>
+
+</ul>
+
       </nav>
+    </div>
 
-      <div class="main-news">
-        @@include('./partials/main_news/_main_news.html', {"newsPicturePath": "img/main-pic.png", "caption": "Jurden Klopp makes a sexy Liverpool", "text": "Liverpool outcast Jose Enrique set to be handed lifeline by Jurden Klopp"})
-
+      <div class="caption-news">
+        @@include('./partials/caption_news/_caption_news.html', {"newsPicturePath": "img/main-pic.png", "caption": "Jurden Klopp makes a sexy Liverpool", "text": "Liverpool outcast Jose Enrique set to be handed lifeline by Jurden Klopp"})
+     
+      <div class="caption-news__line">
       </div>
+    </div>
+<div class="main_news">
+
+<span>Main News</span>
+<div class="main_news__line"></div>
+
+</div>
+
     </header>
 
-      <div class="news-items">
-
-        <div class="last-news-articles">
+      <div class="last-news__items">
+        <!--<div class="last-news-articles">
           last articles 
         </div>
         <div class="last-news-videos">
           last videos
-        </div>
-
-      </div>
+        </div><-->
     </div>
 
     <div class="sidebar">
       <div class="random-videos">
 
         <h3 class="section-header section-header--purple section-header--center">
-          <span>Video</span>
+          <span>Видео</span>
           <div class="line"></div>
         </h3>
 
@@ -68,7 +94,7 @@
         </div>
         
         <div class="more_videos">
-          More videos
+          Больше видео
         </div>
 
         <div class="black_line">

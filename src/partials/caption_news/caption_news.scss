@@ -1,0 +1,22 @@
+.container {
+    width: 900px;
+    height: 250px; 
+}
+
+.news__img {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    float: right;
+}
+
+.caption-news__line {
+    position: absolute;
+    border-bottom: 5px solid red;
+    width: 900px;
+    //margin: 10px 0;
+}
+  
