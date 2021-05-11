@@ -11,9 +11,10 @@
 &:hover {
     content: "";
     background-color: rgb(36, 36, 36);
+    cursor: pointer;
 }
 }
- 
+
 a {
     color: black;
     text-decoration: none;
