@@ -50,8 +50,21 @@
 <span>Main News</span>
 <div class="main_news__line"></div>
 
+<div class="four_columns">
+<div class="four_columns__item">
+@@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_one.png", "about": "The FIFA Ballon d'Or is an annual association football award given by FIFA"})
 </div>
-
+<div class="four_columns__item">
+  @@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_two.png", "about": "Messi got some balloons"})
+</div>
+<div class="four_columns__item">
+  @@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_three.png", "about": "CR7 also, but not so much"})
+</div>
+<div class="four_columns__item with_gray_camera">
+  @@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_four.png", "about": "Ribery got vase!"})
+</div>
+</div>
+</div>
     </header>
 
       <div class="last-news__items">

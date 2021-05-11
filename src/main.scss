@@ -3,8 +3,6 @@
 @import "./partials/navigation/navigation.scss";
 @import "./partials/main_news/main_news.scss";
 
-
-
 body * {
   outline: 1px solid lightgrey;
 }
@@ -15,11 +13,8 @@ body {
   padding: 50px 0;
 }
 
-.main-container {
-  float: left;
-  width: 900px;
-  margin-right: 300px;
-  position: relative;
+.four_columns__item {
+  width: 225px; /*ширина???*/
 }
 
 .sidebar {
@@ -28,21 +23,6 @@ body {
   width: 300px;
   margin-left: 900px;
 }
-
-.main-news__items {
-  width: 100%;
-  position: relative;
-}
-
-/*.last-news-articles {
-  float: left;
-  width: 60%;
-}
-
-.last-news-videos {
- float: right;
- width: 40%;
-}*/
 
 .section-header--purple span{
 color: purple;

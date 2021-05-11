@@ -24,11 +24,57 @@
     content: "";
     display: inline-block;
     width: 900px;
-    position: absolute;
+    position: relative;
     border-bottom: 5px solid rgb(41, 41, 41);
-    bottom: 2px;
+    top: -16px;
     z-index: 0;
 }
+
+.four_columns {
+    width: 900px;
+    display: flex;
+
+  }
+
+.four_columns_in_line_img {
+    width: 142px;
+    height: 90px;  
+    background-size: contain;
+}
+
+.four_columns_in_line {
+    display: inline-block;
+    padding-right: 0;
+    
+}
+
+.with_gray_camera:after {
+    content: "";
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    
+    display: block;
+    //left: 8px;
+    //bottom: 8px;
+    background-image: url("./img/gray camera.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    //background-position: 50%;
+    background-color: white;
+    z-index: 6;
+    } 
+    
+
+
+
+
+
+
+
+
+
+
     
 
     
