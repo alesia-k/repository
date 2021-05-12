@@ -1,0 +1,38 @@
+.last-news_container {
+    width: 500px;  /*?*/
+    position: block; /*?*/
+}
+
+.last-news-articles span {
+    color: rgb(10, 118, 219);
+    z-index: 1;
+    font-family: sans-serif;
+    margin-top: 5px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    padding-right: 5px;
+}
+
+.last-news_red-line:after {
+        content: "";
+        display: inline-block;
+        width: 500px; /*change it later*/
+        position: relative;
+        border-bottom: 5px solid red;
+        top: -16px;
+        z-index: 0;
+    }
+
+    .last-news_unorderedList a:hover {
+        content: "";
+        color: rgb(53, 119, 206);
+        text-decoration: underline;
+    }
+
+.last-news_unorderedList {
+    line-height: 28px;
+    font-size: 13px;
+}
+
+

@@ -48,19 +48,16 @@
     
 }
 
-.with_gray_camera:after {
+.with_gray_camera p:after {
     content: "";
     width: 20px;
     height: 15px;
     position: absolute;
-    
-    display: block;
-    //left: 8px;
-    //bottom: 8px;
+    display: inline-block;
+    margin-left: 5px;
     background-image: url("./img/gray camera.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    //background-position: 50%;
     background-color: white;
     z-index: 6;
     } 

@@ -14,23 +14,23 @@
   <wrapper>
 <header class>
 
-    <div class="navigation">
+    <div class="three navigation items">
 
       <nav>
 <ul>
 
   <li>
-<div class="first"></div>
+<div class="navigation__item"></div>
 <a href="#">Hot themes</a>
   </li>
 
   <li>
-<div class="second"></div>
+<div class="navigation__item"></div>
 <a href="#">EURO-2016 Playoffs</a>
   </li>
 
   <li>
-    <div class="third"></div>
+    <div class="navigation__item"></div>
     <a href="#">El'Classico</a>
   </li>
 
@@ -67,13 +67,53 @@
 </div>
     </header>
 
-      <div class="last-news__items">
-        <!--<div class="last-news-articles">
-          last articles 
+      <div class="last-news_container">
+        <div class="last-news-articles">
+          <span>Last News</span>
+          <div class="last-news_red-line"></div>
         </div>
-        <div class="last-news-videos">
-          last videos
-        </div><-->
+        <div class="last-news_unorderedList">
+          <ul>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Real Madrid players to gaffer: up and at em!"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Swedes indebted to talismanic Ibrahomovic"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "2016 European Championship to go ahead in France"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Ancelotti: Premier League return is my no 1 choice"})
+            </a></li>
+            <li><a href="#">@@include('./partials/last-news_container/_last-news_container.html', {"link": "Walters double secures Euro 2016 spot for Ireland"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "They intended to set off an explosive inside the stadium-eyewitness"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Raul bids goodbye in style"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Five reasons Belgium vs. Spain was called off"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Niggles won't keep Benzema out of Clasico"})
+            </a></li>
+            <li><a href="#">
+              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Abdeslam suspected to have been near King Baudouin Stadium"})
+            </a></li>
+          </ul>
+
+        </div>
+        <div class="last-news-newsfeed">
+
+        </div>
+
+        <div class="last-news-videos__column"></div>
+        <div class="last-news-videos__item"></div>
+        <div class="last-news-videos__item"></div>
+        <div class="last-news-videos__item"></div>
     </div>
 
     <div class="sidebar">
