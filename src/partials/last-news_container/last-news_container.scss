@@ -35,4 +35,17 @@
     font-size: 13px;
 }
 
+ .last-news_unorderedList span:after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    background-image: url("./img/gray camera.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    //z-index: 7;
+}
+
 
