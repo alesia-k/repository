@@ -1,12 +1,13 @@
 .navigation {
     background-color: rgba(31, 30, 30, 0.438);
-    width: 900px;
+    width: 646px;
     height: 30px;
 }
 
 .navigation li {
     display: inline-block;
     padding: 5px 15px;
+   
 
 &:hover {
     content: "";

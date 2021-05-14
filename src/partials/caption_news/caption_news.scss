@@ -1,5 +1,5 @@
 .container {
-    width: 900px;
+    width: 646px;
     height: 250px; 
 }
 
@@ -10,13 +10,13 @@
 }
 
 .description {
-    float: right;
+    display: flex;
 }
 
 .caption-news__line {
     position: absolute;
     border-bottom: 5px solid red;
-    width: 900px;
+    width: 646px;
     //margin: 10px 0;
 }
   

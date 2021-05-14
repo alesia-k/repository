@@ -1,8 +1,10 @@
 .main_news {
-    width: 900px;
+    width: 646px;
     font-family: sans-serif;
     position: relative;
     margin-top: 19px;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
 .main_news span {
@@ -12,6 +14,7 @@
  position: relative;
  background-color: rgb(255, 255, 255);
  z-index: 1;
+
 
  &:after {
      content: "";
@@ -23,7 +26,7 @@
 .main_news__line:after {
     content: "";
     display: inline-block;
-    width: 900px;
+    width: 646px;
     position: relative;
     border-bottom: 5px solid rgb(41, 41, 41);
     top: -16px;
@@ -31,21 +34,25 @@
 }
 
 .four_columns {
-    width: 900px;
+    width: 646px;
     display: flex;
-
+    cursor: pointer;
   }
 
 .four_columns_in_line_img {
-    width: 142px;
-    height: 90px;  
-    background-size: contain;
+    width: 150px;
+    height: 95px;  
+    background-size: cover;
+    display: flex;
 }
 
 .four_columns_in_line {
     display: inline-block;
     padding-right: 0;
-    
+}
+
+.four_columns_description {
+    font-size: 16px;
 }
 
 .with_gray_camera p:after {
@@ -54,6 +61,7 @@
     height: 15px;
     position: absolute;
     display: inline-block;
+    margin-top: 2px;
     margin-left: 5px;
     background-image: url("./img/gray camera.jpg");
     background-repeat: no-repeat;
