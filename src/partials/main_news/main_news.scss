@@ -1,4 +1,4 @@
-.main_news {
+.main_news_container {
     width: 646px;
     font-family: sans-serif;
     position: relative;
@@ -7,14 +7,13 @@
     display: inline-block;
 }
 
-.main_news span {
+.main_news_container span {
  font-family: sans-serif;
  margin-top: 5px;
  display: inline-block;
  position: relative;
  background-color: rgb(255, 255, 255);
  z-index: 1;
-
 
  &:after {
      content: "";

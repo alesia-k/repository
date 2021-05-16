@@ -3,6 +3,7 @@
     height: 266px;
     margin-top: 18px;
     margin-bottom: -17px;
+
 }
 
 .caption_news_description {
@@ -46,4 +47,8 @@ clear: bottom;
     content: "\2039";
     display: inline-block;
     width: 10px;
+}
+
+.interesting-articles {
+    display: flex;
 }

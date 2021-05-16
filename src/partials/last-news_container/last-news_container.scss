@@ -1,6 +1,14 @@
 .last-news_container {
-    width: 646px;
+    width: 646px; /*400?*/
     position: block; /*?*/
+    border: 2px solid blue;
+    position: absolute;
+    display: flex;
+}
+
+.last-news-articles {
+    border: 3px solid tomato;
+    width: 400px;
 }
 
 .last-news-articles span {
@@ -41,15 +49,17 @@
     display: inline-block;
     width: 20px;
     height: 15px;
-    position: absolute;
+    position: relative;
     background-image: url("./img/gray camera.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: white;
     //z-index: 7;
+    margin-left: 5px;
+    top: 3px;
 }
 
-.last-news-newsfeed span {
+.last-news-newsfeed_container span {
     display: inline-block;
     position: relative;
     background-color: white;
@@ -69,8 +79,22 @@
     z-index: 0;
 }
 
-.last-news-newsfeed {
+.last-news-newsfeed_container {
     width: 400px;
+}
+
+.last-news-newsfeed_container .with_icon_play:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    position: relative;
+    background-image: url("./img/icon play.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    left: 5px;
+    top: 3px;
 }
 
 .Zlatan_article {
@@ -100,14 +124,61 @@ margin-right: 5px;
     width: 400px;
 }
 
-
 .newsfeed_list a:hover {
 content: "";
     color: rgb(53, 119, 206);
     text-decoration: underline;
     font-size: 13px;
-   
 }
+
+.with_red_camera::after{
+content: "";
+width: 20px;
+height: 15px;
+position: relative;
+display: inline-block;
+left: 7px;
+bottom: 27px;
+background-image: url("./img/camera-red.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 50%;
+z-index: 8;
+}
+
+.with_red_camera::before{
+    content: "";
+    width: 23px;
+    height: 19px;
+    position: relative;
+    display: block;
+    left: 6px;
+    top: 135px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 5;
+    }
+
+.video__text {
+    font-weight: bold;
+    margin-top: -10px;
+    margin-left: 7px;
+}
+
+.video__img {
+    margin-bottom: -7px;
+    margin-left: 7px;
+}
+
+.video:hover {
+    cursor: pointer;
+    &:hover {
+    color: red;
+    }
+}
+
+
+
 
 
 

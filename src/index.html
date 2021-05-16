@@ -11,205 +11,266 @@
 
 <body>
 
-  
-<div class="common_wrapper">
-<div class="left_container">
-    <div class="three navigation items">
 
-      <nav>
-<ul>
+  <div class="common_wrapper">
+    <div class="two_common_columns">
+    <div class="left_container">
+      <div class="three navigation items">
 
-  <li>
-<div class="navigation__item"></div>
-<a href="#">Hot themes</a>
-  </li>
+        <nav>
+          <ul>
 
-  <li>
-<div class="navigation__item"></div>
-<a href="#">EURO-2016 Playoffs</a>
-  </li>
+            <li>
+              <div class="navigation__item"></div>
+              <a href="#">Hot themes</a>
+            </li>
 
-  <li>
-    <div class="navigation__item"></div>
-    <a href="#">El'Classico</a>
-  </li>
+            <li>
+              <div class="navigation__item"></div>
+              <a href="#">EURO-2016 Playoffs</a>
+            </li>
 
-</ul>
+            <li>
+              <div class="navigation__item"></div>
+              <a href="#">El'Classico</a>
+            </li>
 
-      </nav>
-    </div>
+          </ul>
+
+        </nav>
+      </div>
 
       <div class="caption-news">
         @@include('./partials/caption_news/_caption_news.html', {"newsPicturePath": "img/main-pic.png", "caption": "Jurden Klopp makes a sexy Liverpool", "text": "Liverpool outcast Jose Enrique set to be handed lifeline by Jurden Klopp"})
-     
-      <div class="caption-news__line">
+        <div class="caption-news__line">
+        </div>
       </div>
-    </div>
-<div class="main_news">
+      <div class="main_news_container">
 
-<span>Main News</span>
-<div class="main_news__line"></div>
+        <span>Main News</span>
+        <div class="main_news__line"></div>
 
-<div class="four_columns">
-<div class="four_columns__item">
-@@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_one.png", "about": "The FIFA Ballon d'Or is an annual association football award given by FIFA"})
-</div>
-<div class="four_columns__item">
-  @@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_two.png", "about": "Messi got some balloons"})
-</div>
-<div class="four_columns__item">
-  @@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_three.png", "about": "CR7 also, but not so much"})
-</div>
-<div class="four_columns__item with_gray_camera">
-  @@include('./partials/main_news/_main_news.html', {"imgPath": "/img/main_news_four.png", "about": "Ribery got vase!"})
-</div>
-</div>
-</div>
-    <!--</header><-->
+        <div class="four_columns">
+          <div class="four_columns__item">
+            @@include('./partials/main_news/_main_news.html', {
+            "imgPath": "/img/main_news_one.png",
+            "about": "The FIFA Ballon d'Or is an annual association football award given by FIFA"})
+          </div>
+          <div class="four_columns__item">
+            @@include('./partials/main_news/_main_news.html', {
+            "imgPath": "/img/main_news_two.png",
+            "about": "Messi got some balloons"})
+          </div>
+          <div class="four_columns__item">
+            @@include('./partials/main_news/_main_news.html', {
+            "imgPath": "/img/main_news_three.png",
+            "about": "CR7 also, but not so much"})
+          </div>
+          <div class="four_columns__item with_gray_camera">
+            @@include('./partials/main_news/_main_news.html', {
+            "imgPath": "/img/main_news_four.png",
+            "about": "Ribery got vase!"})
+          </div>
+        </div>
+      </div>
 
       <div class="last-news_container">
         <div class="last-news-articles">
           <span>Last News</span>
           <div class="last-news_red-line"></div>
-        </div>
+        <!--</div><-->
         <div class="last-news_unorderedlist">
           <ul>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Real Madrid players to gaffer: up and at em!"})
-            </a></li>
+                Real Madrid players to gaffer: up and at 'em!
+              </a></li>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Swedes indebted to talismanic Ibrahomovic"})
-            </a></li>
+                Swedes indebted to talismanic Ibrahomovic
+              </a></li>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "2016 European Championship to go ahead in France"})
-            </a></li>
+                2016 European Championship to go ahead in France
+              </a></li>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Ancelotti: Premier League return is my no 1 choice"})
-            </a></li>
-            <li><a href="#">@@include('./partials/last-news_container/_last-news_container.html', {"link": "Walters double secures Euro 2016 spot for Ireland"})
-            </a></li>
+                Ancelotti: "Premier League return is my no 1 choice"
+              </a></li>
+            <li><a href="#">Walters double secures Euro 2016 spot for Ireland
+              </a></li>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "They intended to set off an explosive inside the stadium-eyewitness"})
-            </a></li>
+                "They intended to set off an explosive inside the stadium"-eyewitness
+              </a></li>
             <li>
               <span>
-              <a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Raul bids goodbye in style", "imgPath": "/img/gray camera.jpg", "imgPath": "/img/icon play.jpg"})
-            </a>
-          </span>
-          </li>
+
+                <a href="#">
+                  Raul bids goodbye in style
+                </a>
+              </span>
+            </li>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Five reasons Belgium vs. Spain was called off"})
-            </a></li>
+                Five reasons Belgium vs. Spain was called off
+              </a></li>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Niggles won't keep Benzema out of Clasico"})
-            </a></li>
+                Niggles won't keep Benzema out of Clasico
+              </a></li>
             <li><a href="#">
-              @@include('./partials/last-news_container/_last-news_container.html', {"link": "Abdeslam suspected to have been near King Baudouin Stadium"})
-            </a></li>
+                Abdeslam suspected to have been near King Baudouin Stadium
+              </a></li>
           </ul>
 
         </div>
-        <div class="last-news-newsfeed">
-<span>Newsfeed</span>
-<div class="last-news-newsfeed_line"></div>
+        <div class="last-news-newsfeed_container">
+          <span>Newsfeed</span>
+          <div class="last-news-newsfeed_line"></div>
 
-  <div class="newsfeed_list">
+          <div class="newsfeed_list">
+
+            <div class="Zlatan_article with_gray_camera">
+
+              <img src="img/Zlatan.jpg">
+              <p>Zlatan Ibrahomovic on target as Sweden quality with draw in Denmark</p>
+            </div>
+            <ul>
+              <li>
+                <a href="#">Alvaro Morata insists Juventus are "still hungry" and targets vectory over Milan on
+                  Saturday.</a>
+              </li>
+              <li>
+
+                <span class="with_icon_play">
+                  <a href="#">
+                    Ecuador stay perfect as Argentina, Brazil win
+                  </a>
+                </span>
+
+              </li>
+              <li>
+                <a href="#">
+                  Sweden, Ukraine complete Euro line-up
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Aubameyang penalty gives Gabon World Cup joy
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    <div class="last-news-videos__column"> 
     
-<div class="Zlatan_article with_gray_camera">
- 
-  <img src="img/Zlatan.jpg">
-  <p>Zlatan Ibrahomovic on target as Sweden quality with draw in Denmark</p>
-</div>
-   <ul>
-<li>
-  <a href="#">Alvaro Morata insists Juventus are "still hungry" and targets vectory over Milan on Saturday.</a>
-</li>
-<li>
-  <a href="#">
-    Ecuador stay perfect as Argentina, Brazil win
-  </a>
-</li>
-<li>
-  <a href="#">
-    Sweden, Ukraine complete Euro line-up
-  </a>
-</li>
-<li>
-  <a href="#">
-Aubameyang penalty gives Gabon World Cup joy
-  </a>
-</li>
-
-   </ul>
+    <div class="last-news-videos__item">
+     @@include("./partials/last-news_container/_last-news_videos_column.html", {
+      "newsPicturePath": "/img/cup.png",
+      "text": "Here is how Leage Champions trophy looks like",
+      "direction": "",
+      "css_class": "with_red_camera",
+      "modificator": ""
+     })
+    </div>
+    <div class="last-news-videos__item">
+      @@include("./partials/last-news_container/_last-news_videos_column.html", {
+        "newsPicturePath": "/img/winner.png",
+        "text": "Casillas got some pice of paper",
+        "direction": "",
+        "css_class": "with_red_camera",
+        "modificator": ""
+       })
+    </div>
+    <div class="last-news-videos__item">
+      @@include("./partials/last-news_container/_last-news_videos_column.html", {
+        "newsPicturePath": "/img/girls.png",
+        "text": "Bayern Munich vs Barselona. Fangirls",
+        "direction": "",
+        "css_class": "with_red_camera",
+        "modificator": ""
+       })
+    </div>
   </div>
+</div>
+  </div>
+  <div class="sidebar_container">
+    <div class="random-videos">
+
+      <h3 class="section-header section-header--purple section-header--center">
+        <span>Видео</span>
+        <div class="line"></div>
+      </h3>
+<div class="random_video_and_interesting_articles_column">
   
-</div>
+      <div class="random-videos__item">
 
+        @@include('./partials/random-videos/_random-videos.html', {
+          "newsPicturePath": "img/day-movie.png",
+          "text": "Фильм дня: Гитлер Капут!",
+          "direction": "",
+          "css_class": "with_purple_camera",
+          "modificator": ""
+        })
 
-  </div>  
+      </div>
 
+      <div class="random-videos__item">
+        @@include('./partials/random-videos/_random-videos.html', {
+        "newsPicturePath": "img/subchak.png",
+        "text": "Ксения Собчак беременна",
+        "direction": "",
+        "css_class": "with_purple_camera",
+        "modificator": ""
+      })
 
+      </div>
 
-</div>
+      <div class="random-videos__item">
+        @@include('./partials/random-videos/_random-videos.html', {
+        "newsPicturePath": "img/killing.png",
+        "text": "Группа людей избила влюбленную пару бейсбольной битой",
+        "direction": "",
+        "css_class": "with_purple_camera",
+        "modificator": ""
+      })
+      </div>
 
+      <div class="random-videos__item">
+        @@include('./partials/random-videos/_random-videos.html', {
+        "newsPicturePath": "img/swallows.png",
+        "text": "Небесные ласточки: двухсерийная музыкальная комедия",
+        "direction": "",
+        "css_class": "with_purple_camera",
+        "modificator": ""
+      })
+      </div>
+      <div class="random-videos__item">
+        @@include('./partials/random-videos/_random-videos.html', {
+        "newsPicturePath": "img/blondy.png",
+        "text": "На дополнительном кастинге Хочу в ВИАГРУ девушек просили",
+        "direction": "",
+        "css_class": "with_purple_camera",
+        "modificator": ""
+      })
+      </div>
 
-        <div class="last-news-videos__column"></div>
-        <div class="last-news-videos__item"></div>
-        <div class="last-news-videos__item"></div>
-        <div class="last-news-videos__item"></div>
+      <div class="more_videos">
+        Больше видео
+      </div>
+
+      <div class="black_line"></div>
+
+    </div>
+
+    <div class="interesting_articles">
+      interesting articles
     </div>
   </div>
-    <div class="sidebar_container">
-      <div class="random-videos">
-
-        <h3 class="section-header section-header--purple section-header--center">
-          <span>Видео</span>
-          <div class="line"></div>
-        </h3>
-
-      <div class="random-videos__item with-camera">
-
-        @@include('./partials/random-videos/_random-videos.html', {"imgPath": "img/day-movie.png", "description": "Фильм дня: Гитлер Капут!"})
-
-        </div>
-
-        <div class="random-videos__item with-camera">
-          @@include('./partials/random-videos/_random-videos.html', {"imgPath": "img/subchak.png", "description": "Ксения Собчак беременна"})
-       
-       </div>
-
-        <div class="random-videos__item with-camera">
-          @@include('./partials/random-videos/_random-videos.html', {"imgPath": "img/killing.png", "description": "Группа людей избила влюбленную пару бейсбольной битой"})
-        </div>
-
-        <div class="random-videos__item with-camera">
-          @@include('./partials/random-videos/_random-videos.html', {"imgPath": "img/swallows.png", "description": "Небесные ласточки: двухсерийная музыкальная комедия"})
-        </div>
-        <div class="random-videos__item with-camera">
-          @@include('./partials/random-videos/_random-videos.html', {"imgPath": "img/blondy.png", "description": "На дополнительном кастинге Хочу в ВИАГРУ девушек просили"})
-        </div>
-        
-        <div class="more_videos">
-          Больше видео
-        </div>
-
-        <div class="black_line">
-        
-        </div>
-        
-      </div>
-
-      <div class="interesting-articles">
-        interesting articles
-      </div>
-
-    </div>
-
-    <div class="footer">
-      footer
-      
-    </div>
+  </div>
+</div>
+  <div class="footer">
+    footer
+  </div>
   </div>
 </body>
 

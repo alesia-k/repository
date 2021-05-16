@@ -5,25 +5,32 @@
 @import "./partials/last-news_container/last-news_container.scss";
 
 body * {
-  outline: 1px solid lightgrey;
+ outline: 1px solid lightgrey;
 }
 
 .common_wrapper {
-  width: 977px;
-  height: 1500px;
+  width: 1000px;
   margin: 0 auto;
+  border: 2px solid cornflowerblue;
+  box-sizing: border-box;
+  //position: absolute; /*?*/
 }
 
 .left_container {
-  width: 646px;
-height: 1200px;
+border: 2px solid cyan;
+flex: 1 0 auto;
+}
+
+.two_common_columns {
+  display: flex;
 }
 
 .sidebar_container {
   width: 331px;
-  height: 1200px;
-  position: absolute;
+  display: flex;
+  position: relative;
   float: right;
+  border: 2px solid goldenrod;
 }
 
 .four_columns__item {
@@ -73,4 +80,20 @@ color: purple;
 }
 }
 
+.footer {
+  border: 2px solid darkolivegreen;
+  width: 100%;
+  position: relative;
+}
+
+.last-news-videos__column {
+  position: relative;
+  border: 2px solid rebeccapurple;
+  width: 240px;
+  float: right;
+}
+
+.interesting-articles {
+  display: flex;
+}
   
