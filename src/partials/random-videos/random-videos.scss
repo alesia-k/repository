@@ -57,9 +57,8 @@ z-index: 6;
     z-index: 5;
     }
 
-    .more_videos {
-        cursor: pointer;
-        color: rgb(11, 167, 219);
+    .more_videos a {
+        color: rgb(83, 147, 168);
       
       &:after {
        content: "\2192";
