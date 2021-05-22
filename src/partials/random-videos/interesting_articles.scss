@@ -1,0 +1,18 @@
+.interesting_articles span {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    //z-index: 1;
+    padding-right: 4px;
+    font-family: sans-serif;
+}
+
+.interesting_articles__lighter_line::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    //position: relative;
+    border-bottom: 2px solid rgb(10, 10, 10);
+    top: -16px;
+    z-index: 0;
+}

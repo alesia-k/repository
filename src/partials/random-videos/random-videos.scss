@@ -3,6 +3,11 @@
     padding: 10px;
     border: 2px solid red;
 
+    &:hover {
+        cursor: pointer;
+        color: purple;
+    }
+
     &__img {
         flex-basis: 40%;
         img {
@@ -21,7 +26,8 @@
         font-size: 13px;
         font-weight: bold;
         padding-left: 10px;
-        top: 10px;
+        //padding-bottom: 10px;
+        margin-top: 1px;
 
         &--big-image {
             flex-basis: 50%;
