@@ -1,0 +1,20 @@
+.footer span {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    padding-right: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.footer_line::after {
+  content: "";
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-bottom: 3px solid black;
+    top: -16px;
+    z-index: 0;
+}

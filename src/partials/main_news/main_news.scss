@@ -1,10 +1,11 @@
 .main_news_container {
-    width: 646px;
+    width: 100%;
     font-family: sans-serif;
     position: relative;
     margin-top: 19px;
     box-sizing: border-box;
     display: inline-block;
+    flex: 1 0 auto;
 }
 
 .main_news_container span {
@@ -25,7 +26,7 @@
 .main_news__line:after {
     content: "";
     display: inline-block;
-    width: 646px;
+    width: 100%;
     position: relative;
     border-bottom: 5px solid rgb(41, 41, 41);
     top: -16px;
@@ -47,7 +48,6 @@
 
 .four_columns_in_line {
     display: inline-block;
-    padding-right: 0;
 }
 
 .four_columns_description {

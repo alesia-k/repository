@@ -2,17 +2,59 @@
     display: inline-block;
     position: relative;
     background-color: white;
-    //z-index: 1;
-    padding-right: 4px;
+    z-index: 1;
+    padding-right: 5px;
     font-family: sans-serif;
+    font-size: 20px;
 }
 
 .interesting_articles__lighter_line::after {
     content: "";
     display: inline-block;
     width: 100%;
-    //position: relative;
-    border-bottom: 2px solid rgb(10, 10, 10);
-    top: -16px;
+    position: relative;
+    border-bottom: 3px solid rgb(10, 10, 10);
+    top: -10px;
     z-index: 0;
+}
+
+.articles {
+    display: flex;
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__img {
+        flex-basis: 40%;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &--big-image {
+            flex-basis: 50%;
+        }
+    }
+
+    &__text {
+        flex-basis: 60%;
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-top: 1px;
+
+        &--big-image {
+            flex-basis: 50%;
+        }
+    }
+}
+
+.interesting_articles__bolder_line::after {
+content: "";
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-bottom: 5px solid rgb(10, 10, 10);
 }

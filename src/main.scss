@@ -3,6 +3,8 @@
 @import "./partials/navigation/navigation.scss";
 @import "./partials/main_news/main_news.scss";
 @import "./partials/last-news_container/last-news_container.scss";
+@import "./partials/random-videos/interesting_articles.scss";
+@import "./partials/footer/footer.scss";
 
 body * {
  outline: 1px solid lightgrey;
@@ -93,7 +95,5 @@ color: purple;
   float: right;
 }
 
-.interesting-articles {
-  display: flex;
-}
+
   

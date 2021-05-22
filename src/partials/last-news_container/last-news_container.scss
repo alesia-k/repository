@@ -97,19 +97,22 @@
 }
 
 .Zlatan_article {
-    display: inline-block;
-    width: 400px;
+    display: flex;
     font-family: sans-serif;
     font-size: 13px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .Zlatan_article img {
-float: left;
 background-image: url("./img/Zlatan.jpg");
 width: 100px;
 height: 54px;
 margin-right: 5px;
+}
+
+.Zlatan_article p {
+    padding-left: 4px;
 }
 
 .with_gray_camera::after {
