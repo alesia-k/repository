@@ -17,6 +17,11 @@
 
     &__text {
         flex-basis: 60%;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        padding-left: 10px;
+        top: 10px;
 
         &--big-image {
             flex-basis: 50%;
@@ -58,7 +63,7 @@ z-index: 6;
     }
 
     .more_videos a {
-        color: rgb(83, 147, 168);
+        color: rgb(39, 159, 202);
       
       &:after {
        content: "\2192";
