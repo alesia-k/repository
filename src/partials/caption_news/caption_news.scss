@@ -36,14 +36,6 @@
         width: 5px;
     }*/
 }
-
-.caption-news__line::after {
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid red;
-    width: 657px;
-    //margin: 10px 0;
-}
   
 .amount_of_pages::before {
     content: "\2039";
