@@ -48,26 +48,26 @@
         <span>Main News</span>
         <div class="main_news__line"></div>
 
-        <div class="four_columns">
-          <div class="four_columns__item">
+        <div class="main_news">
+          <div class="main_news__item">
             @@include('./partials/main_news/_main_news.html', {
-            "imgPath": "/img/main_news_one.png",
-            "about": "The FIFA Ballon d'Or is an annual association football award given by FIFA"})
+            "four_columnsPicturePath": "/img/main_news_one.png",
+            "text": "The FIFA Ballon d'Or is an annual association football award given by FIFA"})
           </div>
-          <div class="four_columns__item">
+          <div class="main_news__item">
             @@include('./partials/main_news/_main_news.html', {
-            "imgPath": "/img/main_news_two.png",
-            "about": "Messi got some balloons"})
+            "four_columnsPicturePath": "/img/main_news_two.png",
+            "text": "Messi got some balloons"})
           </div>
-          <div class="four_columns__item">
+          <div class="main_news__item">
             @@include('./partials/main_news/_main_news.html', {
-            "imgPath": "/img/main_news_three.png",
-            "about": "CR7 also, but not so much"})
+            "four_columnsPicturePath": "/img/main_news_three.png",
+            "text": "CR7 also, but not so much"})
           </div>
-          <div class="four_columns__item with_gray_camera">
+          <div class="main_news__item with_gray_camera">
             @@include('./partials/main_news/_main_news.html', {
-            "imgPath": "/img/main_news_four.png",
-            "about": "Ribery got vase!"})
+            "four_columnsPicturePath": "/img/main_news_four.png",
+            "text": "Ribery got vase!"})
           </div>
         </div>
       </div>
@@ -311,6 +311,35 @@
   <div class="footer">
     <span>Обзор</span>
     <div class="footer_line"></div>
+    <div class="foo_columns">
+      
+      <div class="foo_columns__item">
+        @@include('./partials/footer/_footer.html', {
+          "caption": "Знакомства", "downPicturePath": "img/foo1.png", "text": "Отношения актеров в кино и реальной жизни"
+        })
+      </div>
+      <div class="foo_columns__item">
+        @@include('./partials/footer/_footer.html', {
+          "caption": "Знакомства", "downPicturePath": "img/foo2.png", "text": "Отношения актеров в кино и реальной жизни"
+        })
+      </div>
+      <div class="foo_columns__item">
+        @@include('./partials/footer/_footer.html', {
+          "caption": "Знакомства", "downPicturePath": "img/foo3.png", "text": "Отношения актеров в кино и реальной жизни"
+        })
+      </div>
+      <div class="foo_columns__item">
+        @@include('./partials/footer/_footer.html', {
+          "caption": "Приколы", "downPicturePath": "img/foo4.png", "text": "Отношения актеров в кино и реальной жизни"
+        })
+      </div>
+      <div class="foo_columns__item">
+        @@include('./partials/footer/_footer.html', {
+          "caption": "Авто", "downPicturePath": "img/foo5.png", "text": "Отношения актеров в кино и реальной жизни"
+        })
+      </div>
+      <div class="foo__line"></div>
+    </div>
   </div>
   </div>
 </body>

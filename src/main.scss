@@ -1,6 +1,6 @@
 @import "./partials/random-videos/random-videos.scss";
 @import "./partials/caption_news/caption_news.scss";
-@import "./partials/navigation/navigation.scss";
+//@import "./partials/navigation/navigation.scss";
 @import "./partials/main_news/main_news.scss";
 @import "./partials/last-news_container/last-news_container.scss";
 @import "./partials/random-videos/interesting_articles.scss";
@@ -35,13 +35,90 @@ flex: 1 0 auto;
   border: 2px solid goldenrod;
 }
 
-.four_columns__item {
-  width: 225px; /*ширина???*/
+.navigation {
+  background-color: rgba(31, 30, 30, 0.438);
+  width: 100%;
 }
 
+.navigation li {
+  display: inline-block;
+  padding: 5px 15px;
+
+&:hover {
+  content: "";
+  background-color: rgb(36, 36, 36);
+  cursor: pointer;
+}
+}
+
+.navigation li:hover a {
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.main_news_container {
+  width: 100%;
+  font-family: sans-serif;
+  margin-top: 19px;
+  flex: 1 0 auto;
+}
+
+.main_news_container span {
+font-family: sans-serif;
+margin-top: 5px;
+display: inline-block;
+position: relative;
+background-color: rgb(255, 255, 255);
+z-index: 1;
+
+&:after {
+   content: "";
+   display: inline-block;
+   width: 6px;
+}
+}
+
+.main_news__line:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  border-bottom: 5px solid rgb(41, 41, 41);
+  top: -16px;
+  z-index: 0;
+}
+
+.main_news {
+  width: 646px;  /*при 100% всё ломается*/
+  display: flex;
+  cursor: pointer;
+}
+
+.main_news__item {
+width: 225px; /*ширина???*/
+}
+
+.with_gray_camera p:after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 5px;
+  background-image: url("./img/gray camera.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  z-index: 6;
+  } 
+
 .sidebar {
-  //position: absolute;
-  //float: right;
   width: 300px;
   margin-left: 900px;
 }
@@ -55,7 +132,6 @@ color: purple;
   display: inline-block;
   width: 8px;
 }
-
 
 .section-header {
   position: relative;
@@ -83,9 +159,43 @@ color: purple;
 }
 
 .footer {
-  border: 2px solid darkolivegreen;
   width: 100%;
+}
+
+.footer span {
+  display: inline-block;
   position: relative;
+  background-color: white;
+  z-index: 1;
+  padding-right: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.footer_line::after {
+  content: "";
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-bottom: 3px solid black;
+    top: -16px;
+}
+
+.foo_columns {
+  display: flex;
+}
+
+.foo_columns__item {
+  margin-left: 40px;
+}
+
+.foo__line::after {
+content: "";
+display: inline-block;
+position: relative;
+border-bottom: 5px solid black;
+width: 100%;
 }
 
 .last-news-videos__column {
@@ -94,6 +204,7 @@ color: purple;
   width: 240px;
   float: right;
 }
+
 
 
   

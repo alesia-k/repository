@@ -1,20 +1,17 @@
-.footer span {
-    display: inline-block;
-    position: relative;
-    background-color: white;
-    z-index: 1;
-    padding-right: 10px;
-    font-family: sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
+.down {
+  cursor: pointer;
 }
 
-.footer_line::after {
-  content: "";
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    border-bottom: 3px solid black;
-    top: -16px;
-    z-index: 0;
+.down__caption {
+  color: rgb(168, 5, 5);
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.down__text {
+  color: rgba(8, 128, 207, 0.87);
+  font-family: sans-serif;
+  margin-top: 10px;
 }
