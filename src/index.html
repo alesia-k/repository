@@ -64,7 +64,7 @@
             "four_columnsPicturePath": "/img/main_news_three.png",
             "text": "CR7 also, but not so much"})
           </div>
-          <div class="main_news__item with_gray_camera">
+          <div class="main_news__item gray_cam_main-news">
             @@include('./partials/main_news/_main_news.html', {
             "four_columnsPicturePath": "/img/main_news_four.png",
             "text": "Ribery got vase!"})
@@ -97,8 +97,7 @@
                 "They intended to set off an explosive inside the stadium"-eyewitness
               </a></li>
             <li>
-              <span>
-
+              <span class="gray_cam_last-news icon-play_last-news">
                 <a href="#">
                   Raul bids goodbye in style
                 </a>
@@ -122,7 +121,7 @@
 
           <div class="newsfeed_list">
 
-            <div class="Zlatan_article with_gray_camera">
+            <div class="Zlatan_article gray_cam_Zlatan">
 
               <img src="img/Zlatan.jpg">
               <p>Zlatan Ibrahomovic on target as Sweden quality with draw in Denmark</p>
@@ -134,7 +133,7 @@
               </li>
               <li>
 
-                <span class="with_icon_play">
+                <span class="icon-play_newsfeed">
                   <a href="#">
                     Ecuador stay perfect as Argentina, Brazil win
                   </a>
@@ -271,7 +270,7 @@
         "modificator": ""
       })
 </div>
-<div class="interesting_articles__item">
+<div class="interesting_articles__item gray-cam-Jolly">
   @@include('./partials/random-videos/_interesting_articles.html', {
         "articlesPicturePath": "img/Joly.png",
         "text": "Анджелина Джоли сильно похудела",
@@ -312,7 +311,7 @@
     <span>Обзор</span>
     <div class="footer_line"></div>
     <div class="foo_columns">
-      
+      <div class="sign_left"></div>
       <div class="foo_columns__item">
         @@include('./partials/footer/_footer.html', {
           "caption": "Знакомства", "downPicturePath": "img/foo1.png", "text": "Отношения актеров в кино и реальной жизни"
@@ -338,7 +337,8 @@
           "caption": "Авто", "downPicturePath": "img/foo5.png", "text": "Отношения актеров в кино и реальной жизни"
         })
       </div>
-      <div class="foo__line"></div>
+      <div class="sign_right"></div>
+      <div class="foo__line"></div> 
     </div>
   </div>
   </div>
