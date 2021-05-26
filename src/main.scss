@@ -53,6 +53,10 @@ flex: 1 0 auto;
 }
 }
 
+.navigation ul {
+  padding: 0;
+}
+
 .navigation li:hover a {
   color: white;
 }
