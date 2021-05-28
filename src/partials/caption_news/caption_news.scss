@@ -38,17 +38,10 @@
     padding-right: 15px;
 }
 
-.amount_of_pages::before {
-    content: "\003C";
-    display: inline-block;
+.amount_of_pages img {
     width: 10px;
-    color: rgb(192, 34, 34);
 }
 
-.amount_of_pages::after {
-    content: "\003E";
-    display: inline-block;
+.amount_of_page {
     width: 10px;
-    color: rgb(192, 34, 34);
-    font-weight: bold;
 }

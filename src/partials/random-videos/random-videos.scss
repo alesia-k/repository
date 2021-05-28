@@ -1,7 +1,7 @@
 .news {
     display: flex;
     padding: 10px;
-    border: 2px solid red;
+    //border: 2px solid red;
 
     &:hover {
         cursor: pointer;
@@ -34,55 +34,5 @@
         }
     }
 }
-
-  .with_purple_camera {
-      position: relative;
-  }
-
-.with_purple_camera:before {
-content: "";
-width: 20px;
-height: 15px;
-position: absolute;
-display: block;
-left: 7px;
-bottom: 15px;
-background-image: url("./img/camera-purple.jpg");
-background-repeat: no-repeat;
-background-size: contain;
-background-position: 50%;
-z-index: 6;
-}
-
-.with_purple_camera:after {
-    content: "";
-    width: 23px;
-    height: 19px;
-    position: absolute;
-    display: block;
-    left: 6px;
-    bottom: 13px;
-    background-color: white;
-    border-radius: 5px;
-    z-index: 5;
-    }
-
-    .more_videos a {
-        color: rgb(39, 159, 202);
-      
-      &:after {
-       content: "\2192";
-       display: inline-block;
-       width: 10px;
-      }
-    }
-      
-      .black_line {
-        position: relative;
-        border-bottom: 5px solid black;
-        bottom: 5px;
-        width: 100%;
-        margin: 10px 0;
-      }
 
      

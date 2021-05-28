@@ -13,13 +13,12 @@ body * {
 .common_wrapper {
   width: 1000px;
   margin: 0 auto;
-  border: 2px solid cornflowerblue;
+  //border: 2px solid cornflowerblue;
   box-sizing: border-box;
-  //position: absolute; /*?*/
 }
 
 .left_container {
-border: 2px solid cyan;
+//border: 1px solid cyan;
 flex: 1 0 auto;
 }
 
@@ -32,13 +31,14 @@ flex: 1 0 auto;
   display: flex;
   position: relative;
   float: right;
-  border: 2px solid goldenrod;
+  margin-left: 25px;
+  //border: 2px solid goldenrod;
 }
 
 /*начало стилей меню*/
 
 .navigation {
-  background-color: rgba(31, 30, 30, 0.438);
+  background-color: rgba(110, 110, 110, 0.438);
   width: 100%;
 }
 
@@ -74,7 +74,7 @@ a {
   content: "";
   position: absolute;
   border-bottom: 5px solid red;
-  width: 657px;
+  width: 648px;
   //margin: 10px 0;
 }
 
@@ -136,14 +136,13 @@ width: 225px; /*ширина???*/
 
   /*начало last news*/
   .last-news_container {
-    width: 646px; /*400?*/
-    position: block; /*?*/
-    border: 2px solid blue;
+    width: 100%;
+    //border: 2px solid blue;
     display: flex;
 }
 
 .last-news-articles {
-    border: 3px solid tomato;
+    //border: 3px solid tomato;
     width: 400px;
 }
 
@@ -297,9 +296,10 @@ content: "";
 
 .last-news-videos__column {
   position: relative;
-  border: 2px solid rebeccapurple;
-  width: 240px;
-  float: right;
+  //border: 2px solid rebeccapurple;
+  width: 243px; /* почему не работает с 100%?*/
+  display: flex;
+  flex-direction: column;
 }
 
 .with_red_camera::after{
@@ -308,12 +308,11 @@ width: 20px;
 height: 15px;
 position: relative;
 display: inline-block;
-left: 7px;
+left: -190px;
 bottom: 27px;
 background-image: url("./img/camera-red.jpg");
 background-repeat: no-repeat;
 background-size: contain;
-background-position: 50%;
 z-index: 8;
 }
 
@@ -323,11 +322,15 @@ z-index: 8;
     height: 19px;
     position: relative;
     display: block;
-    left: 6px;
+    left: 25px;
     top: 135px;
     background-color: white;
     border-radius: 5px;
     z-index: 5;
+    }
+
+    .last-news-videos__item {
+      text-align: right;
     }
 /*конец last news*/
 
@@ -336,6 +339,56 @@ z-index: 8;
   width: 300px;
   margin-left: 900px;
 }
+
+.with_purple_camera {
+  position: relative;
+}
+
+.with_purple_camera:before {
+content: "";
+width: 20px;
+height: 15px;
+position: absolute;
+display: block;
+left: 7px;
+bottom: 15px;
+background-image: url("./img/camera-purple.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 50%;
+z-index: 6;
+}
+
+.with_purple_camera:after {
+content: "";
+width: 23px;
+height: 19px;
+position: absolute;
+display: block;
+left: 6px;
+bottom: 13px;
+background-color: white;
+border-radius: 5px;
+z-index: 5;
+}
+
+.more_videos a {
+    color: rgb(10, 118, 219);;
+  
+  &:after {
+   content: "\2192";
+   display: inline-block;
+   width: 10px;
+  }
+}
+  
+  .black_line {
+    position: relative;
+    border-bottom: 5px solid black;
+    bottom: 5px;
+    width: 100%;
+    margin: 10px 0;
+  }
 
 .section-header--purple span{
 color: purple;
@@ -382,6 +435,7 @@ color: purple;
   padding-right: 5px;
   font-family: sans-serif;
   font-size: 20px;
+  margin-top: 25px;
 }
 
 .gray-cam-Jolly {
@@ -437,17 +491,17 @@ color: purple;
   margin-top: 10px;
 }
 
-.sign_left::before {
-content: "\003C";
-    display: inline-block;
-    color: rgb(192, 34, 34);
+.sign_left img{
     vertical-align: middle; /*не работает*/
+    width: 35px;
+    height: 35px;
+    margin-top: 70px;
 }
 
-.sign_right::after {
-content: "\003E";
-    display: inline-block;
-    color: rgb(192, 34, 34);
+.sign_right img {
+    width: 35px;
+    height: 35px;
+    margin-top: 70px;
     vertical-align: middle; /*не работает*/
 }
 
@@ -465,7 +519,8 @@ content: "\003E";
 }
 
 .foo_columns__item {
-  margin-left: 40px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 .foo__line::after { /*не отображается*/
