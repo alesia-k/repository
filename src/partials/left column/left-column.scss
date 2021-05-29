@@ -1,0 +1,35 @@
+.biography {
+    display: flex;
+    padding: 10px;
+    //border: 2px solid red;
+
+    &__caption {
+        font-weight: bold;
+        color: rgb(133, 31, 31);
+    }
+
+    &__img {
+        flex-basis: 40%;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__description {
+        flex-basis: 60%;
+        font-family: sans-serif;
+        font-size: 13px;
+        padding-left: 10px;
+    }
+}
+
+.biography .Read-more {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: rgb(133, 31, 31);
+    text-decoration: none;
+}
+
+

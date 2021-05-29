@@ -11,7 +11,32 @@
 
 <body>
   <header class="container">
-    header
+    <nav>
+      <ul>
+
+        <li>
+          <div class="bg-contacts_"></div>
+         <a href="#">contacts</a>
+        </li>
+    
+        <li>
+          <div class="bg-e_shop_"></div>
+          <a href="#">e-shop</a>
+        </li>
+    
+        <li>
+          <div class="bg-faq_"></div>
+          <a href="#">faq</a>
+        </li>
+    
+        <li>
+          <div class="bg-home_"></div>
+          <a href="#">home</a>
+        </li>
+        
+      </ul>
+
+    </nav>
   </header>
 
   <div class="container banner">
@@ -19,7 +44,68 @@
 
   </div>
   <main class="container">
-    main content
+    <div class="left-column">
+
+      <h3 class="left-column--header">
+      <span>All about Mansur</span>
+      
+        </h3>
+
+      <div class="left-column__item">
+        @@include('./partials/left column/_left-column.html', {
+        "biographyPicturePath": "/img/img1--.jpg", "caption": "Orphan and son of pilots",
+        "text": "A small, practically new-born bear appeared at the Orlovka airfield in the spring. Where he came from and what happened is unknown. There are no random people in aviation, and men with strong hands and good hearts never leave orphans alone. The foundling was called Mansur - in the Altai dialect it means bear. The surname was given in honor of the airfield - Orlovsky. The bear almost instantly turned into the epicenter of the life of the airfield - everyone came to hug it, shake it's leather paw, pat behind the ear. Mansur still had a sucking reflex, he loved to slap his outstretched palm, childishly clasp the one who came up behind his knees. One of the pilot's husky dog became its best friend.", "direction": "", "modificator": ""
+        })
+      </div>
+      <div class="left-column__item">
+        @@include('./partials/left column/_left-column.html', {
+        "biographyPicturePath": "/img/img2--.jpg", "caption": "Searching for the vital way",
+        "text": "Somehow it turned out by itself that the pilot Andrey Ivanov became the curator, father and great friend of Mansur. He comprehended the hard science of growing bears in captivity - from the point how to feed to where it lives. For instance, chocolate is strictly forbidden for the bears. But the guests, hugging this bear was trying to give all kind of restricted sweets to the bear. That was the reason why some educational conversations took place at that time. - We understood that at the moment it is something between a child and a puppy. But time will fly quickly, and, frankly speaking, the place of the bear is in the forest, - recognizes Andrew. - But just like that, let go Mansur into the forest - send him to certain death. At that age, it would not feed itself. We started to look for solutions. We found Pazhetnov family. They are amazing people.", "direction": "", "modificator": ""
+          })
+      </div>
+      <div class="left-column__item">
+        @@include('./partials/left column/_left-column.html', {
+        "biographyPicturePath": "/img/help--.jpg", "caption": "Officer fraud",
+        "text": "Searching for solutions brought up to the Ministry of Natural Resources and Ecology. There, a major officer confirmed that the aviators found the right way and gave the coordinates of the expert. He promised that they would send the bear to the nature reserve Seliger and that Mansur would live there better than you and I. It was very hard to give a bear.  Aviators felt themselves as parents sending a teenager to a cadet school or to an overseas college — they understand that it would be better, but heart grows heavy. People, who came to take Mansur were inconvenient and the pilots did not like them. Two rowdies came by old soviet car, put Mansur into the cage and took Mansur away - Andrey remembers.", "direction": "", "modificator": ""
+      })
+      </div>
+      <div class="left-column__item">
+        @@include('./partials/left column/_left-column.html', {
+        "biographyPicturePath": "/img/rescured--.jpg", "caption": "Rescued!",
+        "text": "Mansur's cry was heard at the entrance of that base. Mansur scraping claws along the bars of the cage, roared. Pilots called the bear by name. Mansur numb or something.... When the cage was opened, Mansur literally jumped into Andrey’s arms. And then it began to rush between the other men, randomly grabbing their knees, licking their palms. The owner of the base gave the bear to pilots without further ado. Everything was clear. And the pilots, meanwhile, opened the pots with taken food- it was obvious that the bear was hungry. All that time, Mansur lived in a cramped cage.", "direction": "", "modificator": ""
+      })
+      </div>
+      <div class="left-column__item">
+        @@include('./partials/left column/_left-column.html', {
+        "biographyPicturePath": "/img/home--.jpg", "caption": "Home sweet home",
+        "text": "After long trip to home airfield Mansur jumped out the car and run to enclosure. Mansur started to examine its place - smelling everything and checking what was going on here while he was out. Pilots gathered to discuss what to do now and after debates decided to leave Mansur in Orlovka airfield for bear's safety. - We studied the issue, the best conditions of treating the bears in captivity is in Moscow Zoo at the moment, we got an expert advices from there and now we are trying to treat Mansur in similar ways- Andrey states.", "direction": "", "modificator": ""
+      })
+      </div>
+      
+    </div>
+    <div class="right-column">
+      <div class="right-column__item">
+        @@include('./partials/right column/_right-column.html', {
+        "imgPath": "img/waterpool-.jpg", "about": "Look at waterpool that Mansur owns"
+        })
+      </div>
+      <div class="right-column__item">
+        @@include('./partials/right column/_right-column.html', {
+        "imgPath": "img/wood house-.jpg", "about": "Look at wooden house that Mansur owns"
+        })
+      </div>
+      <div class="right-column__item">
+        @@include('./partials/right column/_right-column.html', {
+          "imgPath": "img/training-.jpg", "about": "Look at how Mansur works out"
+          })
+      </div>
+      <div class="right-column__item">
+        @@include('./partials/right column/_right-column.html', {
+        "imgPath": "img/grotto-.jpg", "about": "Look at the future grotto with "
+          })
+      </div>
+    </div>
+
   </main>
   <footer class="container">
     footer

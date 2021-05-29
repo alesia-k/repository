@@ -1,9 +1,58 @@
-body * {
+@import "./partials/left column/left-column.scss";
+@import "./partials/right column/right-column.scss";
+@import "./sprites.scss";
+
+body * { 
   outline: 1px solid lightgrey;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  height: 100px; /*временно*/
 }
+
+nav:hover {
+  content: "";
+}
+
+nav ul {
+  display: flex;
+  
+  list-style: none;
+  padding: 5px;
+}
+
+li {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+  margin: 0px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+.left-column {
+  width: 75%;
+}
+
+.left-column h3 {
+  text-align: center;
+}
+
+.left-column--header {
+  position: relative;
+}
+
+.right-column {
+  width: 25%;
+}
+
