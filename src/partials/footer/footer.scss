@@ -1,12 +1,11 @@
 .down {
   cursor: pointer;
-}
 
-.down__img {
+&__img {
   text-align: center;
 }
 
-.down__caption {
+&__caption {
   color: rgb(168, 5, 5);
   font-family: sans-serif;
   font-weight: lighter;
@@ -15,12 +14,14 @@
   text-align: left;
 }
 
-.down__text {
+&__text {
   color: rgba(8, 128, 207, 0.87);
   font-family: sans-serif;
   margin: 10px 15px 0px 18px;
   text-align: left;
   font-size: 14px;
 }
+}
+
 
 

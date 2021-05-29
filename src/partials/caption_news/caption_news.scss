@@ -2,9 +2,9 @@
     width: 100%;
     margin-top: 18px;
     display: flex;
-}
 
-.caption_news__img {
+
+&__img {
     flex-basis: 60%;
     img {
         max-width: 100%;
@@ -12,23 +12,26 @@
     }
 }
 
-.caption_news__description {
+
+&__description {
    width: 250px; /*почему не получается изменить на %?*/
    padding-left: 20px;
-   
 }
 
-.caption_news__caption {
+
+&__caption {
  color: rgb(192, 34, 34);
  font-size: 37px;
  font-weight: lighter;
 }
 
-.caption_news__text {
+
+&__text {
     font-size: 16px;
     margin-top: -17px;
     font-family: sans-serif;
     line-height: 19px;
+}
 }
 
 .amount_of_pages {
