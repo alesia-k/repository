@@ -1,0 +1,17 @@
+.menu-item {
+    display: inline-block;
+    padding: 0 15px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        position: relative;
+        top: 2px;
+        left: 2px;
+        font-weight: bold;
+    }
+
+    &__description {
+        text-align: center;
+    }
+}

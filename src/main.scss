@@ -1,6 +1,7 @@
 @import "./partials/left column/left-column.scss";
 @import "./partials/right column/right-column.scss";
 @import "./sprites.scss";
+@import "./partials/menu/menu.scss";
 
 body * { 
   outline: 1px solid lightgrey;
@@ -11,32 +12,18 @@ body * {
   margin: 0 auto;
 }
 
-nav:hover {
-  content: "";
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 5px;
-}
-
-li {
-  font-family: sans-serif;
-  text-align: center;
-  font-weight: bold;
-  color: grey;
-  margin: 0px 10px;
-}
-
-a {
-  text-decoration: none;
-  color: gray;
-}
-
 main {
   width: 100%;
   display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-caption {
+  margin: auto;
 }
 
 .left-column {
@@ -53,5 +40,24 @@ main {
 
 .right-column {
   width: 25%;
+}
+
+.right-column__item {
+  padding: 15px 25px 0px;
+
+  &:hover{
+    color: brown;
+    cursor: pointer;
+  }
+}
+
+ .map-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__map {
+  width: 50%;
+  padding: 25px;
 }
 

@@ -1,23 +1,22 @@
-.bg-contacts_, .bg-e_shop_, .bg-faq_, .bg-home_ {
+.sprite {
     margin: 5px;
-    cursor: pointer;
     background-image: url('/img/css_sprites.png');
     width: 50px;
     height: 50px;
 }
 
-.bg-contacts_ {
+.contacts {
     background-position: -10px -10px;
 }
 
-.bg-e_shop_ {
+.e-shop {
     background-position: -10px -80px;
 }
 
-.bg-faq_ {
+.faq {
     background-position: -80px -10px;
 }
 
-.bg-home_ {
+.home {
     background-position: -80px -80px;
 }

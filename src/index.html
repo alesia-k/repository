@@ -6,42 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.scss">
   <title>First project</title>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" integrity="sha256-EqzwzekQXKNbB5EE4nNBQT+2gWQIWRZQXAd89YdIq8M=" crossorigin="anonymous">
   <script src="./js/main.js" defer></script>
 </head>
 
 <body>
   <div class="common container">
-  <header class="container">
-    <nav>
-      <ul>
-
-        <li>
-          <div class="bg-contacts_"></div>
-         <a href="#">contacts</a>
-        </li>
-    
-        <li>
-          <div class="bg-e_shop_"></div>
-          <a href="#">e-shop</a>
-        </li>
-    
-        <li>
-          <div class="bg-faq_"></div>
-          <a href="#">faq</a>
-        </li>
-    
-        <li>
-          <div class="bg-home_"></div>
-          <a href="#">home</a>
-        </li>
-        
-      </ul>
-
-    </nav>
+  <header class="container menu">
+    <div class="main-caption">
+      <span>Bear Mansur</span>
+    </div>
+    <div class="main-menu">
+    @@include('./partials/menu/_menu.html', {
+    "item": "contacts"
+  })
+  @@include('./partials/menu/_menu.html', {
+    "item": "e-shop"
+  })
+  @@include('./partials/menu/_menu.html', {
+    "item": "faq"
+  })
+  @@include('./partials/menu/_menu.html', {
+    "item": "home"
+  })
+</div>
   </header>
 
   <div class="container banner">
-    banner
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="./img/2-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
+          </li>
+          <li class="splide__slide">
+            <img src="./img/3-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
+          </li>
+          <li class="splide__slide">
+            <img src="./img/4-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      new Splide( '.splide', {
+        type   : 'loop',
+	      perPage: 1,
+        speed: 2000,
+        arrows: true,
+        autoplay: true,
+        interval: '3000',
+        arrows: false,
+      } ).mount();
+    </script>
 
   </div>
   <main class="container">
@@ -107,7 +126,15 @@
       </div>
     </div>
   </main>
-  <footer class="container">
+  <section class="container map-form">
+    <div class="container__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2318.6130590393773!2d36.05516951536492!3d54.46976449767037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4134aff456fe0c11%3A0x77c4dd94e6aed6c7!2z0JDRjdGA0L7QtNGA0L7QvCDQntGA0LXRiNC60L7QstC-!5e0!3m2!1sru!2sby!4v1622399195420!5m2!1sru!2sby" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="container__form">
+    form
+    </div>
+  </section>
+  <footer class="container footer">
     footer
   </footer>
 </div>
