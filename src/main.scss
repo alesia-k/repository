@@ -20,6 +20,7 @@ body * {
 .left_container {
 //border: 1px solid cyan;
 flex: 1 0 auto;
+max-width: 646px;
 }
 
 .two_common_columns {
@@ -118,7 +119,7 @@ z-index: 1;
 }
 
 .main_news__item {
-width: 225px; /*ширина???*/
+width: 25%;
 padding-left: 15px;
 }
 
