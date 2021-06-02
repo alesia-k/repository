@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.scss">
   <title>First project</title>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -40,9 +41,21 @@
       </div>
 
       <div class="caption-news">
-        @@include('./partials/caption_news/_caption_news.html', {"caption_newsPicturePath": "img/main-pic.png", "caption": "Jurden Klopp makes a sexy Liverpool", "text": "Liverpool outcast Jose Enrique set to be handed lifeline by Jurden Klopp"})
+        @@include('./partials/caption_news/_caption_news.html', {"caption_newsPicturePath": "img/main-pic.png", "caption": "Jurden Klopp makes a sexy Liverpool", "text": "Liverpool outcast Jose Enrique set to be handed lifeline by Jurden Klopp"})     
         <div class="caption-news__line"></div>
+        <script>
+          new Splide( '.splide', {
+            type   : 'loop',
+            perPage: 1,
+            speed: 2000,
+            arrows: true,
+            autoplay: true,
+            interval: '3000',
+            arrows: false,
+          } ).mount();
+        </script>
       </div>
+
       <div class="main_news_container">
 
         <span>Main News</span>

@@ -119,6 +119,7 @@ z-index: 1;
 
 .main_news__item {
 width: 225px; /*ширина???*/
+padding-left: 15px;
 }
 
 .gray_cam_main-news p:after {
@@ -178,10 +179,6 @@ width: 225px; /*ширина???*/
     font-size: 13px;
     width: 400px;
 }
-
-//.gray_cam_last-news {
- // position: relative;
-//}
 
  .last-news_unorderedlist span::after{
     content: "";
