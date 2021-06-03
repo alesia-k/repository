@@ -489,20 +489,6 @@ color: purple;
   margin-top: 10px;
 }
 
-.sign_left img{
-    vertical-align: middle; /*не работает*/
-    width: 35px;
-    height: 35px;
-    margin-top: 70px;
-}
-
-.sign_right img {
-    width: 35px;
-    height: 35px;
-    margin-top: 70px;
-    vertical-align: middle; /*не работает*/
-}
-
 .footer_line::after {
   content: "";
     display: inline-block;
@@ -516,7 +502,7 @@ color: purple;
   display: flex;
 }
 
-.foo_columns__item {
+.splid__splid {
   margin-left: 10px;
   //text-align: center;
 }

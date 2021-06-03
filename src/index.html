@@ -335,43 +335,48 @@
     <span>Обзор</span>
     <div class="footer_line"></div>
     <div class="foo_columns">
-      <div class="sign_left">
-        <a href="#">
-          <img alt="left" src="img/left arrow.png">
-        </a>
-      </div>
-      <div class="foo_columns__item">
+      <div class="splid">
+        <div class="splid__track">
+          <ul class="splid__list">
+          <li class="splid__slid">
         @@include('./partials/footer/_footer.html', {
           "caption": "Знакомства", "downPicturePath": "img/foo1.png", "text": "Отношения актеров в кино и реальной жизни"
         })
-      </div>
-      <div class="foo_columns__item">
+      </li>
+      <li class="splid__slid">
         @@include('./partials/footer/_footer.html', {
           "caption": "Знакомства", "downPicturePath": "img/foo2.png", "text": "Отношения актеров в кино и реальной жизни"
         })
-      </div>
-      <div class="foo_columns__item">
+      </li>
+      <li class="splid__slid">
         @@include('./partials/footer/_footer.html', {
           "caption": "Знакомства", "downPicturePath": "img/foo3.png", "text": "Отношения актеров в кино и реальной жизни"
         })
-      </div>
-      <div class="foo_columns__item">
+      </li>
+      <li class="splid__slid">
         @@include('./partials/footer/_footer.html', {
           "caption": "Приколы", "downPicturePath": "img/foo4.png", "text": "Отношения актеров в кино и реальной жизни"
         })
-      </div>
-      <div class="foo_columns__item">
+      </li>
+      <li class="splid__slid">
         @@include('./partials/footer/_footer.html', {
           "caption": "Авто", "downPicturePath": "img/foo5.png", "text": "Отношения актеров в кино и реальной жизни"
         })
-      </div>
-      <div class="sign_right">
-        <a href="#">
-          <img alt="right" src="img/right arrow.png">
-        </a>
-      </div>
-
+      </li>
+    </ul>
+  </div>
+</div>
       <div class="foo__line"></div> 
+      <script>
+        new Splid( '.splid', {
+          type   : 'loop',
+          perPage: 1,
+          speed: 2000,
+          autoplay: true,
+          interval: '3000',
+          arrows: true,
+        } ).mount();
+      </script>
     </div>
   </div>
   </div>

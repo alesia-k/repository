@@ -2,7 +2,11 @@
   cursor: pointer;
 
 &__img {
-  text-align: center;
+  //text-align: center;
+  img {
+    width: 138px;
+    height: 95px;
+}
 }
 
 &__caption {
