@@ -1,7 +1,7 @@
 .biography {
     display: flex;
     padding: 10px;
-    //border: 2px solid red;
+    border: 2px solid red;
 
     &__caption {
         font-weight: bold;
@@ -10,6 +10,8 @@
 
     &__img {
         flex-basis: 40%;
+        text-align: center;
+
         img {
             max-width: 100%;
             max-height: 100%;
@@ -30,6 +32,7 @@
     font-style: italic;
     color: rgb(133, 31, 31);
     text-decoration: none;
+    padding-top: 30px;
 }
 
 

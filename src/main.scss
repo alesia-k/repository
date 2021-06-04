@@ -58,9 +58,10 @@ main {
 
 .container__map {
   width: 50%;
-  padding: 15px;
+  //padding: 15px;
   position: relative;
 }
+
 
 .container__map-description p {
   //position: absolute;
@@ -68,5 +69,33 @@ main {
   //left: 50%;
   //transform: translateX(-50%);
  text-align: center;
+}
+
+.container__form {
+  max-width: 50%;
+  //padding: 15px;
+  position: relative;
+}
+
+.container__form-description p {
+  //position: absolute;
+  //top: 0px;
+  //left: 50%;
+  //transform: translateX(-50%);
+ text-align: center;
+ margin-top: 30px;
+} 
+
+.feedback {
+  row-gap: 10px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: minmax(100px, max-content) 1fr;
+
+
+&__label {
+  //padding-right: 10px;
+  font-size: 25px;
+}
 }
 
