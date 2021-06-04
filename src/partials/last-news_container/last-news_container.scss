@@ -1,20 +1,17 @@
 .video:hover {
-    cursor: pointer;
-    &:hover {
-    color: red;
-    }
+    position: absolute;
 }
 
 .video__text {
     font-weight: bold;
-    margin-top: -10px;
+    //margin-top: -10px;
     margin-left: 22px;
     text-align: left;
 }
 
 .video__img {
-    margin-bottom: -7px;
     margin-left: 7px;
+    position: absolute;
 }
 
 
