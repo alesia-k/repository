@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" integrity="sha256-EqzwzekQXKNbB5EE4nNBQT+2gWQIWRZQXAd89YdIq8M=" crossorigin="anonymous">
   <script src="./js/main.js" defer></script>
+  <link rel="stylesheet" href="./main.scss">
 </head>
 
 <body>
@@ -335,30 +336,30 @@
     <span>Обзор</span>
     <div class="footer_line"></div>
     <div class="foo_columns">
-      <div class="splid">
-        <div class="splid__track">
-          <ul class="splid__list">
-          <li class="splid__slid">
+      <div class="footer-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+          <li class="splide__slide">
         @@include('./partials/footer/_footer.html', {
           "caption": "Знакомства", "downPicturePath": "img/foo1.png", "text": "Отношения актеров в кино и реальной жизни"
         })
       </li>
-      <li class="splid__slid">
+      <li class="splide__slide">
         @@include('./partials/footer/_footer.html', {
           "caption": "Знакомства", "downPicturePath": "img/foo2.png", "text": "Отношения актеров в кино и реальной жизни"
         })
       </li>
-      <li class="splid__slid">
+      <li class="splide__slide">
         @@include('./partials/footer/_footer.html', {
           "caption": "Знакомства", "downPicturePath": "img/foo3.png", "text": "Отношения актеров в кино и реальной жизни"
         })
       </li>
-      <li class="splid__slid">
+      <li class="splide__slide">
         @@include('./partials/footer/_footer.html', {
           "caption": "Приколы", "downPicturePath": "img/foo4.png", "text": "Отношения актеров в кино и реальной жизни"
         })
       </li>
-      <li class="splid__slid">
+      <li class="splide__slide">
         @@include('./partials/footer/_footer.html', {
           "caption": "Авто", "downPicturePath": "img/foo5.png", "text": "Отношения актеров в кино и реальной жизни"
         })
@@ -368,7 +369,7 @@
 </div>
       <div class="foo__line"></div> 
       <script>
-        new Splid( '.splid', {
+        new Splide( '.footer-slider', {
           type   : 'loop',
           perPage: 1,
           speed: 2000,
