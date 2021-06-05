@@ -24,6 +24,9 @@ main {
 
 .main-caption {
   margin: auto;
+
+  font-size: 65px;
+  color: rgb(77, 24, 24);
 }
 
 .left-column {
@@ -43,10 +46,12 @@ main {
 }
 
 .right-column__item {
-  padding: 15px 25px 0px;
+  padding: 25px 25px 0px;
+  //border: 3px dashed brown;
+  color: rgb(0, 73, 0);
 
   &:hover{
-    color: brown;
+    color: green;
     cursor: pointer;
   }
 }
@@ -98,4 +103,5 @@ main {
   font-size: 25px;
 }
 }
+
 

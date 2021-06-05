@@ -26,6 +26,18 @@
     }
 }
 
+.biography__caption {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    margin: 0px;
+}
+
+.biography__text {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 20px;
+}
+
 .biography .Read-more {
     display: block;
     text-align: right;
@@ -33,6 +45,9 @@
     color: rgb(133, 31, 31);
     text-decoration: none;
     padding-top: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
