@@ -2,6 +2,10 @@
 @import "./partials/right column/right-column.scss";
 @import "./sprites.scss";
 @import "./partials/menu/menu.scss";
+@font-face {
+  font-family: 'limelight-font';
+  src: url('/fonts/Limelight-Regular.ttf');
+}
 
 body * { 
   outline: 1px solid lightgrey;
@@ -24,7 +28,7 @@ main {
 
 .main-caption {
   margin: auto;
-
+  font-family: 'Permanent Marker', cursive;
   font-size: 65px;
   color: rgb(77, 24, 24);
 }
@@ -33,8 +37,24 @@ main {
   width: 75%;
 }
 
+.left-column--header {
+  background-image: url('./img/paw-black.jpg');
+  background-repeat: space;
+  background-position: right;
+  background-size: contain;
+  
+}
+
+.left-column--header span {
+  background-color: white;
+  padding: 0 28px;
+  color: rgb(75, 0, 0);
+}
+
 .left-column h3 {
   text-align: center;
+  font-family: 'limelight-font';
+  font-size: 50px;
 }
 
 .left-column--header {
@@ -46,7 +66,7 @@ main {
 }
 
 .right-column__item {
-  padding: 25px 25px 0px;
+  padding: 30px 25px 0px;
   //border: 3px dashed brown;
   color: rgb(0, 73, 0);
 
@@ -63,13 +83,11 @@ main {
 
 .container__map {
   width: 50%;
-  //padding: 15px;
+  padding: 15px;
   position: relative;
 }
 
-
 .container__map-description p {
-  //position: absolute;
   //top: 0px;
   //left: 50%;
   //transform: translateX(-50%);
@@ -77,8 +95,8 @@ main {
 }
 
 .container__form {
-  max-width: 50%;
-  //padding: 15px;
+  width: 50%;
+  padding: 15px;
   position: relative;
 }
 
@@ -104,4 +122,65 @@ main {
 }
 }
 
+.menu {
+  margin-top: 15px;
+}
 
+  .menu__item {
+    width: 230px;
+    height: 85px;
+    margin-top: 35px;
+    padding: 10px 10px;
+    font-size: 35px;
+    position: relative;
+    border-radius: 15%;
+    border: 1px dashed rgba(218, 10, 10, 0.801);
+    background-color: rgb(89, 146, 13);
+
+    cursor: pointer;
+
+    &:hover {
+      background-color:rgb(126, 187, 98);
+    }
+}
+
+  .menu__content {
+    display: none;
+    left: 100%;
+    bottom: -70%;
+    //top: 100%;
+    //left: 50%;
+    position: absolute;
+  }
+
+  .menu__item:hover .menu__content{
+    display: block;
+  }
+
+  .sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sub-menu__item {
+    padding: 7px 15px;
+
+    &:hover {
+      background-color: rgb(226, 152, 15);
+    }
+  }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(189, 145, 91);
+}
+
+.footer__text span {
+  font-size: 15px;
+  text-align: center;
+  font-weight: normal;
+  padding: 30px 50px;
+  display: inline-block;
+}
