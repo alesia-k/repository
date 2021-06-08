@@ -106,7 +106,6 @@ main {
   //left: 50%;
   //transform: translateX(-50%);
  text-align: center;
- margin-top: 30px;
 } 
 
 .feedback {
@@ -115,11 +114,38 @@ main {
   display: grid;
   grid-template-columns: minmax(100px, max-content) 1fr;
 
-
 &__label {
-  //padding-right: 10px;
+  padding: 3px;
   font-size: 25px;
+  color: rgb(13, 112, 112);
 }
+}
+
+.footer-button {
+  font-size: 15px;
+  font-weight: bold;
+  top: 15px;
+  //right: 20px;
+  float: right;
+  padding: 10px;
+  background-color: rgba(79, 141, 143, 0.295);
+  position: relative;
+  width: calc(100% - 110px);
+  
+  &:hover {
+    background-color: rgb(167, 95, 70);
+    color: bisque;
+  }
+}
+
+input:focus {
+  outline: 3px solid rgb(32, 151, 145);
+}
+
+.clearFix-section-button::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .menu {
@@ -128,15 +154,13 @@ main {
 
   .menu__item {
     width: 230px;
-    height: 85px;
+    height: 65px;
     margin-top: 35px;
     padding: 10px 10px;
-    font-size: 35px;
+    font-size: 25px;
     position: relative;
-    border-radius: 15%;
     border: 1px dashed rgba(218, 10, 10, 0.801);
-    background-color: rgb(89, 146, 13);
-
+    background-color: rgb(150, 211, 70);
     cursor: pointer;
 
     &:hover {
@@ -147,7 +171,7 @@ main {
   .menu__content {
     display: none;
     left: 100%;
-    bottom: -70%;
+    bottom: -100%;
     //top: 100%;
     //left: 50%;
     position: absolute;
@@ -181,6 +205,27 @@ main {
   font-size: 15px;
   text-align: center;
   font-weight: normal;
-  padding: 30px 50px;
+  padding: 30px 50px;;
   display: inline-block;
+  //margin: 30px 10px;
+  font-weight: bold;
+}
+
+.footer__social-media {
+  margin: 15px;
+  display: flex;
+}
+
+.footer__social-media a {
+  padding: 5px;
+}
+
+.footer__social-media__items {
+  display: flex;
+}
+
+.footer__social-media span {
+  margin: 10px;
+  font-weight: bold;
+  
 }

@@ -169,13 +169,20 @@
   Message:
 </label>
 <input name="message">
-<Button class="footer-button">
+<!--<Button class="footer-button">
   Support
-</Button>
+</Button><-->
       </div>
+      <div class="section-button">
+      <div class="clearFix-section-button">
+        <Button class="footer-button">
+          Support
+        </Button>
+      </div>
+    </div>
       <div class="footer-menu">
         <div class="menu__item">
-          Follow Mansur in social media!
+          What social media do you follow Mansur in?
           <div class="menu__content">
             <ul class="sub-menu">
               <li class="sub-menu__item">Facebook</li>
@@ -194,6 +201,23 @@
   <footer class ="container footer">
     <div class="footer__text">
       <span>copyright Mansur Bear</span>
+    </div>
+    <div class="footer__social-media">
+      <span>Follow Mansur in social media!</span>
+      <div class="footer__social-media__items">
+      @@include('./partials/footer-sprites/_footer-sprites.html', {
+        "url": "https://www.youtube.com/watch?v=h4yyi1DAl1Q", "imgPath": "img/youtube-.png"
+          })
+
+          @@include('./partials/footer-sprites/_footer-sprites.html', {
+            "url": "https://www.facebook.com/mansurbear", "imgPath": "img/facebook-.png"
+              })
+           
+              @@include('./partials/footer-sprites/_footer-sprites.html', {
+                "url": "https://www.instagram.com/mansurbear/", "imgPath": "img/instagram-.png"
+                  })
+                
+                </div>
     </div>
 
   </footer>
