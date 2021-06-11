@@ -21,13 +21,33 @@ main {
   display: flex;
 }
 
+/*.accordion {
+  &__status {
+    display: none;
+  }
+  &__opener {
+    display: block;
+  }
+  &__content {
+    max-height: 0;
+    //max-width: 50px;
+    //max-height: fit-content;
+    overflow: hidden;
+    transition: max-height .5s linear;
+  }
+}
+
+.accordion__status:checked ~ .accordion__content {
+  max-height: 50vh;
+}*/
+
 .menu {
   display: flex;
   justify-content: space-between;
 }
 
 .main-caption {
-  margin: auto;
+  //margin: auto;
   font-family: 'Permanent Marker', cursive;
   font-size: 65px;
   color: rgb(77, 24, 24);
@@ -53,7 +73,7 @@ main {
 
 .left-column h3 {
   text-align: center;
-  font-family: 'limelight-font';
+  font-family: 'limelight-font', sans-serif;
   font-size: 50px;
 }
 
@@ -76,6 +96,13 @@ main {
   }
 }
 
+.container__map-description, .container__form-description {
+  font-family: "Mate SC", sans-serif;
+  font-weight: bolder;
+  color: rgb(22, 114, 83);
+  font-size: 20px;
+}
+
  .map-form {
   display: flex;
   justify-content: space-between;
@@ -88,9 +115,6 @@ main {
 }
 
 .container__map-description p {
-  //top: 0px;
-  //left: 50%;
-  //transform: translateX(-50%);
  text-align: center;
 }
 
@@ -101,10 +125,6 @@ main {
 }
 
 .container__form-description p {
-  //position: absolute;
-  //top: 0px;
-  //left: 50%;
-  //transform: translateX(-50%);
  text-align: center;
 } 
 
@@ -142,12 +162,6 @@ input:focus {
   outline: 3px solid rgb(32, 151, 145);
 }
 
-.clearFix-section-button::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .menu {
   margin-top: 15px;
 }
@@ -155,7 +169,7 @@ input:focus {
   .menu__item {
     width: 230px;
     height: 65px;
-    margin-top: 35px;
+    margin-top: 80px;
     padding: 10px 10px;
     font-size: 25px;
     position: relative;
@@ -189,6 +203,7 @@ input:focus {
 
   .sub-menu__item {
     padding: 7px 15px;
+    border: 2px solid black;
 
     &:hover {
       background-color: rgb(226, 152, 15);
@@ -216,6 +231,11 @@ input:focus {
   display: flex;
 }
 
+.footer__social-media span {
+  margin: 10px;
+  font-weight: bold;
+}
+
 .footer__social-media a {
   padding: 5px;
 }
@@ -224,8 +244,4 @@ input:focus {
   display: flex;
 }
 
-.footer__social-media span {
-  margin: 10px;
-  font-weight: bold;
-  
-}
+

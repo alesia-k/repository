@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./main.scss">
   <title>First project</title>
-  
+ <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" integrity="sha256-EqzwzekQXKNbB5EE4nNBQT+2gWQIWRZQXAd89YdIq8M=" crossorigin="anonymous">
   <script src="./js/main.js" defer></script>
+  <link rel="stylesheet" href="./main.scss">
 </head>
 
 <body>
@@ -21,6 +21,19 @@
     <div class="main-caption">
       <span>Bear Mansur</span>
     </div>
+    
+    <!--<div class="accordion">
+      <input id="status" class="accordion__status" type="checkbox">
+      <label for="status" class="accordion__opener">
+        English
+      </label>
+      <div class="accordion__content">
+        
+        Russian
+        
+        </div>
+      </div>
+    </div>-->
     <div class="main-menu">
     @@include('./partials/menu/_menu.html', {
     "item": "contacts"
@@ -60,7 +73,7 @@
 	      perPage: 1,
         speed: 2000,
         arrows: true,
-        autoplay: true,
+        //autoplay: true,//
         interval: '3000',
         arrows: true,
         pagination: false,
@@ -169,16 +182,11 @@
   Message:
 </label>
 <input name="message">
-<!--<Button class="footer-button">
-  Support
-</Button><-->
       </div>
       <div class="section-button">
-      <div class="clearFix-section-button">
         <Button class="footer-button">
           Support
         </Button>
-      </div>
     </div>
       <div class="footer-menu">
         <div class="menu__item">
@@ -219,10 +227,7 @@
                 
                 </div>
     </div>
-
   </footer>
-    
 </div>
 </body>
-
 </html>
