@@ -162,7 +162,7 @@ input {
   }
 }
 
-input:focus {
+.container__form input:focus {
   outline: 3px solid rgb(32, 151, 145);
 }
 
