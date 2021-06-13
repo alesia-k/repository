@@ -21,25 +21,30 @@ main {
   display: flex;
 }
 
-/*.accordion {
-  &__status {
-    display: none;
-  }
-  &__opener {
-    display: block;
-  }
-  &__content {
-    max-height: 0;
-    //max-width: 50px;
-    //max-height: fit-content;
-    overflow: hidden;
-    transition: max-height .5s linear;
+.voiting form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.voiting {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(133, 31, 31);
+  font-weight: bold;
+}
+
+.form__input {
+  color: rgb(77, 57, 3);
+  font-family: 'Source Sans Pro', sans-serif;
+
+  &:hover {
+    color: rgb(0, 73, 0);
   }
 }
 
-.accordion__status:checked ~ .accordion__content {
-  max-height: 50vh;
-}*/
+input {
+  margin: 5px 0;
+}
 
 .menu {
   display: flex;
@@ -49,9 +54,10 @@ main {
 .main-caption {
   //margin: auto;
   font-family: 'Permanent Marker', cursive;
-  font-size: 65px;
+  font-size: 70px;
   color: rgb(77, 24, 24);
 }
+
 
 .left-column {
   width: 75%;
@@ -62,7 +68,6 @@ main {
   background-repeat: space;
   background-position: right;
   background-size: contain;
-  
 }
 
 .left-column--header span {
@@ -87,7 +92,6 @@ main {
 
 .right-column__item {
   padding: 30px 25px 0px;
-  //border: 3px dashed brown;
   color: rgb(0, 73, 0);
 
   &:hover{
@@ -146,11 +150,12 @@ main {
   font-weight: bold;
   top: 15px;
   //right: 20px;
-  float: right;
   padding: 10px;
   background-color: rgba(79, 141, 143, 0.295);
   position: relative;
   width: calc(100% - 110px);
+  float: right;
+ 
   
   &:hover {
     background-color: rgb(167, 95, 70);
@@ -167,8 +172,8 @@ input:focus {
 }
 
   .menu__item {
-    width: 230px;
-    height: 65px;
+    width: 210px;
+    height: 35px;
     margin-top: 80px;
     padding: 10px 10px;
     font-size: 25px;
@@ -185,8 +190,8 @@ input:focus {
   .menu__content {
     display: none;
     left: 100%;
-    bottom: -100%;
-    //top: 100%;
+    bottom: -70%;
+    top: 50%;
     //left: 50%;
     position: absolute;
   }
@@ -243,5 +248,3 @@ input:focus {
 .footer__social-media__items {
   display: flex;
 }
-
-

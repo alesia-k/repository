@@ -5,6 +5,15 @@
     &__caption {
         font-weight: bold;
         color: rgb(133, 31, 31);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 25px;
+        font-style: italic;
+        margin: 0px;
+    }
+
+    &__text {
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 20px;
     }
 
     &__img {
@@ -25,18 +34,6 @@
     }
 }
 
-.biography__caption {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    margin: 0px;
-}
-
-.biography__text {
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 20px;
-}
-
 .biography .Read-more {
     display: block;
     text-align: right;
@@ -48,5 +45,4 @@
     font-size: 15px;
     font-weight: bold;
 }
-
 

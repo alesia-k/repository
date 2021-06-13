@@ -5,229 +5,252 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>First project</title>
- <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" integrity="sha256-EqzwzekQXKNbB5EE4nNBQT+2gWQIWRZQXAd89YdIq8M=" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"
+    integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
+    integrity="sha256-EqzwzekQXKNbB5EE4nNBQT+2gWQIWRZQXAd89YdIq8M=" crossorigin="anonymous">
   <script src="./js/main.js" defer></script>
   <link rel="stylesheet" href="./main.scss">
 </head>
 
 <body>
   <div class="common container">
-  <header class="container menu">
-    <div class="main-caption">
-      <span>Bear Mansur</span>
-    </div>
-    
-    <!--<div class="accordion">
-      <input id="status" class="accordion__status" type="checkbox">
-      <label for="status" class="accordion__opener">
-        English
-      </label>
-      <div class="accordion__content">
-        
-        Russian
-        
+    <header class="container menu">
+      <div class="main-caption">
+        <span>Bear Mansur</span>
+      </div>
+
+      <div class="voiting">
+        <span>How have you found out about Mansur?</span>
+        <form method="get" action="#">
+
+          <label class="form__input">
+            <span>Social media</span>
+
+            <input type="radio" name="radio" value="youtube">
+          </label>
+          <label class="form__input">
+            <span>Friends told me</span>
+            <input type="radio" name="radio" value="instagram">
+          </label>
+
+          <label class="form__input">
+            <span>From TV</span>
+            <input type="radio" name="radio" value="facebook">
+          </label>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+      <div class="main-menu">
+        @@include('./partials/menu/_menu.html', {
+        "item": "contacts"
+        })
+        @@include('./partials/menu/_menu.html', {
+        "item": "e-shop"
+        })
+        @@include('./partials/menu/_menu.html', {
+        "item": "faq"
+        })
+        @@include('./partials/menu/_menu.html', {
+        "item": "home"
+        })
+      </div>
+    </header>
+
+    <div class="container banner">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="./img/2-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
+            </li>
+            <li class="splide__slide">
+              <img src="./img/with berries-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
+            </li>
+            <li class="splide__slide">
+              <img src="./img/4-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
+            </li>
+          </ul>
         </div>
       </div>
-    </div>-->
-    <div class="main-menu">
-    @@include('./partials/menu/_menu.html', {
-    "item": "contacts"
-  })
-  @@include('./partials/menu/_menu.html', {
-    "item": "e-shop"
-  })
-  @@include('./partials/menu/_menu.html', {
-    "item": "faq"
-  })
-  @@include('./partials/menu/_menu.html', {
-    "item": "home"
-  })
-</div>
-  </header>
 
-  <div class="container banner">
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img src="./img/2-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
-          </li>
-          <li class="splide__slide">
-            <img src="./img/with berries-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
-          </li>
-          <li class="splide__slide">
-            <img src="./img/4-.jpg" class="d-block w-100" alt="..." width="1200px" height="300px">
-          </li>
-        </ul>
-      </div>
+      <script>
+        new Splide('.splide', {
+          type: 'loop',
+          perPage: 1,
+          speed: 2000,
+          arrows: true,
+          autoplay: true,
+          interval: '3000',
+          arrows: true,
+          pagination: false,
+        }).mount();
+      </script>
+
     </div>
+    <main class="container">
+      <div class="left-column">
 
-    <script>
-      new Splide( '.splide', {
-        type   : 'loop',
-	      perPage: 1,
-        speed: 2000,
-        arrows: true,
-        //autoplay: true,//
-        interval: '3000',
-        arrows: true,
-        pagination: false,
-      } ).mount();
-    </script>
+        <h3 class="left-column--header">
 
-  </div>
-  <main class="container">
-    <div class="left-column">
+          <span>All about Mansur</span>
 
-      <h3 class="left-column--header">
-  
-      <span>All about Mansur</span>
-      
         </h3>
 
-      <div class="left-column__item">
-        @@include('./partials/left column/_left-column.html', {
-        "biographyPicturePath": "/img/img1--.jpg", "caption": "Orphan and son of pilots",
-        "text": "A small, practically new-born bear appeared at the Orlovka airfield in the spring. Where he came from and what happened is unknown. There are no random people in aviation, and men with strong hands and good hearts never leave orphans alone. The foundling was called Mansur - in the Altai dialect it means bear. The surname was given in honor of the airfield - Orlovsky. The bear almost instantly turned into the epicenter of the life of the airfield - everyone came to hug it, shake it's leather paw, pat behind the ear. Mansur still had a sucking reflex, he loved to slap his outstretched palm, childishly clasp the one who came up behind his knees. One of the pilot's husky dog became its best friend.", "direction": "", "modificator": ""
-        })
-      </div>
-      <div class="left-column__item">
-        @@include('./partials/left column/_left-column.html', {
-        "biographyPicturePath": "/img/img2--.jpg", "caption": "Searching for the vital way",
-        "text": "Somehow it turned out by itself that the pilot Andrey Ivanov became the curator, father and great friend of Mansur. He comprehended the hard science of growing bears in captivity - from the point how to feed to where it lives. For instance, chocolate is strictly forbidden for the bears. But the guests, hugging this bear was trying to give all kind of restricted sweets to the bear. That was the reason why some educational conversations took place at that time. - We understood that at the moment it is something between a child and a puppy. But time will fly quickly, and, frankly speaking, the place of the bear is in the forest, - recognizes Andrew. - But just like that, let go Mansur into the forest - send him to certain death. At that age, it would not feed itself. We started to look for solutions. We found Pazhetnov family. They are amazing people.", "direction": "", "modificator": ""
+        <div class="left-column__item">
+          @@include('./partials/left column/_left-column.html', {
+          "biographyPicturePath": "/img/img1--.jpg", "caption": "Orphan and son of pilots",
+          "text": "A small, practically new-born bear appeared at the Orlovka airfield in the spring. Where he came from and what happened is unknown. There are no random people in aviation, and men with strong hands and good hearts never leave orphans alone. The foundling was called Mansur - in the Altai dialect it means bear. The surname was given in honor of the airfield - Orlovsky. The bear almost instantly turned into the epicenter of the life of the airfield - everyone came to hug it, shake it's leather paw, pat behind the ear. Mansur still had a sucking reflex, he loved to slap his outstretched palm, childishly clasp the one who came up behind his knees. One of the pilot's husky dog became its best friend.", "direction": "", "modificator": ""
           })
+        </div>
+        <div class="left-column__item">
+          @@include('./partials/left column/_left-column.html', {
+          "biographyPicturePath": "/img/img2--.jpg", "caption": "Searching for the vital way",
+          "text": "Somehow it turned out by itself that the pilot Andrey Ivanov became the curator, father and great friend of Mansur. He comprehended the hard science of growing bears in captivity - from the point how to feed to where it lives. For instance, chocolate is strictly forbidden for the bears. But the guests, hugging this bear was trying to give all kind of restricted sweets to the bear. That was the reason why some educational conversations took place at that time. - We understood that at the moment it is something between a child and a puppy. But time will fly quickly, and, frankly speaking, the place of the bear is in the forest, - recognizes Andrew. - But just like that, let go Mansur into the forest - send him to certain death. At that age, it would not feed itself. We started to look for solutions. We found Pazhetnov family. They are amazing people.", "direction": "", "modificator": ""
+          })
+        </div>
+        <div class="left-column__item">
+          @@include('./partials/left column/_left-column.html', {
+          "biographyPicturePath": "/img/help--.jpg", "caption": "Officer fraud",
+          "text": "Searching for solutions brought up to the Ministry of Natural Resources and Ecology. There, a major officer confirmed that the aviators found the right way and gave the coordinates of the expert. He promised that they would send the bear to the nature reserve Seliger and that Mansur would live there better than you and I. It was very hard to give a bear. Aviators felt themselves as parents sending a teenager to a cadet school or to an overseas college — they understand that it would be better, but heart grows heavy. People, who came to take Mansur were inconvenient and the pilots did not like them. Two rowdies came by old soviet car, put Mansur into the cage and took Mansur away - Andrey remembers.", "direction": "", "modificator": ""
+          })
+        </div>
+        <div class="left-column__item">
+          @@include('./partials/left column/_left-column.html', {
+          "biographyPicturePath": "/img/rescured--.jpg", "caption": "Rescued!",
+          "text": "Mansur's cry was heard at the entrance of that base. Mansur scraping claws along the bars of the cage, roared. Pilots called the bear by name. Mansur numb or something.... When the cage was opened, Mansur literally jumped into Andrey’s arms. And then it began to rush between the other men, randomly grabbing their knees, licking their palms. The owner of the base gave the bear to pilots without further ado. Everything was clear. And the pilots, meanwhile, opened the pots with taken food- it was obvious that the bear was hungry. All that time, Mansur lived in a cramped cage.", "direction": "", "modificator": ""
+          })
+        </div>
+        <div class="left-column__item">
+          @@include('./partials/left column/_left-column.html', {
+          "biographyPicturePath": "/img/home--.jpg", "caption": "Home sweet home",
+          "text": "After long trip to home airfield Mansur jumped out the car and run to enclosure. Mansur started to examine its place - smelling everything and checking what was going on here while he was out. Pilots gathered to discuss what to do now and after debates decided to leave Mansur in Orlovka airfield for bear's safety. - We studied the issue, the best conditions of treating the bears in captivity is in Moscow Zoo at the moment, we got an expert advices from there and now we are trying to treat Mansur in similar ways- Andrey states.", "direction": "", "modificator": ""
+          })
+        </div>
+
       </div>
-      <div class="left-column__item">
-        @@include('./partials/left column/_left-column.html', {
-        "biographyPicturePath": "/img/help--.jpg", "caption": "Officer fraud",
-        "text": "Searching for solutions brought up to the Ministry of Natural Resources and Ecology. There, a major officer confirmed that the aviators found the right way and gave the coordinates of the expert. He promised that they would send the bear to the nature reserve Seliger and that Mansur would live there better than you and I. It was very hard to give a bear.  Aviators felt themselves as parents sending a teenager to a cadet school or to an overseas college — they understand that it would be better, but heart grows heavy. People, who came to take Mansur were inconvenient and the pilots did not like them. Two rowdies came by old soviet car, put Mansur into the cage and took Mansur away - Andrey remembers.", "direction": "", "modificator": ""
-      })
-      </div>
-      <div class="left-column__item">
-        @@include('./partials/left column/_left-column.html', {
-        "biographyPicturePath": "/img/rescured--.jpg", "caption": "Rescued!",
-        "text": "Mansur's cry was heard at the entrance of that base. Mansur scraping claws along the bars of the cage, roared. Pilots called the bear by name. Mansur numb or something.... When the cage was opened, Mansur literally jumped into Andrey’s arms. And then it began to rush between the other men, randomly grabbing their knees, licking their palms. The owner of the base gave the bear to pilots without further ado. Everything was clear. And the pilots, meanwhile, opened the pots with taken food- it was obvious that the bear was hungry. All that time, Mansur lived in a cramped cage.", "direction": "", "modificator": ""
-      })
-      </div>
-      <div class="left-column__item">
-        @@include('./partials/left column/_left-column.html', {
-        "biographyPicturePath": "/img/home--.jpg", "caption": "Home sweet home",
-        "text": "After long trip to home airfield Mansur jumped out the car and run to enclosure. Mansur started to examine its place - smelling everything and checking what was going on here while he was out. Pilots gathered to discuss what to do now and after debates decided to leave Mansur in Orlovka airfield for bear's safety. - We studied the issue, the best conditions of treating the bears in captivity is in Moscow Zoo at the moment, we got an expert advices from there and now we are trying to treat Mansur in similar ways- Andrey states.", "direction": "", "modificator": ""
-      })
-      </div>
-      
-    </div>
-    <div class="right-column">
-      <div class="right-column__item">
-        @@include('./partials/right column/_right-column.html', {
-        "imgPath": "img/waterpool-.jpg", "about": "Look at waterpool that Mansur owns"
-        })
-      </div>
-      <div class="right-column__item">
-        @@include('./partials/right column/_right-column.html', {
-        "imgPath": "img/wood house-.jpg", "about": "Look at Mansur's wooden house"
-        })
-      </div>
-      <div class="right-column__item">
-        @@include('./partials/right column/_right-column.html', {
+      <div class="right-column">
+        <div class="right-column__item">
+          @@include('./partials/right column/_right-column.html', {
+          "imgPath": "img/waterpool-.jpg", "about": "Look at waterpool that Mansur owns"
+          })
+        </div>
+        <div class="right-column__item">
+          @@include('./partials/right column/_right-column.html', {
+          "imgPath": "img/wood house-.jpg", "about": "Look at Mansur's wooden house"
+          })
+        </div>
+        <div class="right-column__item">
+          @@include('./partials/right column/_right-column.html', {
           "imgPath": "img/training-.jpg", "about": "Look at how Mansur works out"
           })
-      </div>
-      <div class="right-column__item">
-        @@include('./partials/right column/_right-column.html', {
-        "imgPath": "img/grotto-.jpg", "about": "Look at the grotto with waterfall"
+        </div>
+        <div class="right-column__item">
+          @@include('./partials/right column/_right-column.html', {
+          "imgPath": "img/grotto-.jpg", "about": "Look at the grotto with waterfall"
           })
-      </div>
-      <div class="right-column__item">
-        @@include('./partials/right column/_right-column.html', {
-        "imgPath": "img/hammock.jpg", "about": "Look at Mansur on his hammock"
+        </div>
+        <div class="right-column__item">
+          @@include('./partials/right column/_right-column.html', {
+          "imgPath": "img/hammock.jpg", "about": "Look at Mansur on his hammock"
           })
+        </div>
       </div>
-    </div>
-  </main>
-  <section class="container map-form">
+    </main>
+    <section class="container map-form">
 
-    <div class="container__map">
-      <div class="container__map-description">
-        <p>
-        Would you like to know where Mansur lives? Right here!
-      </p>
-      </div>
-      <div class="container__map-img">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2318.6130590393773!2d36.05516951536492!3d54.46976449767037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4134aff456fe0c11%3A0x77c4dd94e6aed6c7!2z0JDRjdGA0L7QtNGA0L7QvCDQntGA0LXRiNC60L7QstC-!5e0!3m2!1sru!2sby!4v1622399195420!5m2!1sru!2sby" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+      <div class="container__map">
+        <div class="container__map-description">
+          <p>
+            Would you like to know where Mansur lives? Right here!
+          </p>
+        </div>
+        <div class="container__map-img">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2318.6130590393773!2d36.05516951536492!3d54.46976449767037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4134aff456fe0c11%3A0x77c4dd94e6aed6c7!2z0JDRjdGA0L7QtNGA0L7QvCDQntGA0LXRiNC60L7QstC-!5e0!3m2!1sru!2sby!4v1622399195420!5m2!1sru!2sby"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
 
-    </div>
-    <div class="container__form">
-      <div class="container__form-description">
-        <p>
-        Would you like to support Mansur?
-      </p>
       </div>
-      <div class="feedback">
-<label class="feedback__label">
-  Name:
-</label>
-<input name="name">
-<label class="feedback__label">
-  Email:
-</label>
-<input name="email">
-<label class="feedback__label">
-  Message:
-</label>
-<input name="message">
-      </div>
-      <div class="section-button">
-        <Button class="footer-button">
-          Support
-        </Button>
-    </div>
-      <div class="footer-menu">
-        <div class="menu__item">
-          What social media do you follow Mansur in?
-          <div class="menu__content">
-            <ul class="sub-menu">
-              <li class="sub-menu__item">Facebook</li>
-              <li class="sub-menu__item">Youtube</li>
-              <li class="sub-menu__item">Instagram</li>
-            </ul>
+      <div class="container__form">
+        <div class="container__form-description">
+          <p>
+            Would you like to support Mansur?
+          </p>
+        </div>
+        <div class="feedback">
+          <label class="feedback__label">
+            Name:
+          </label>
+          <input name="name">
+          <label class="feedback__label">
+            Email:
+          </label>
+          <input name="email">
+          <label class="feedback__label">
+            Message:
+          </label>
+          <input name="message">
+        </div>
+        <div class="section-button">
+          <Button class="footer-button">
+            Support
+          </Button>
+        </div>
+        <div class="footer-menu">
+
+          <div class="menu__item">
+            Come and see more!
+            <div class="menu__content">
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="https://www.facebook.com/mansurbear" target="_blank">Facebook</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="https://www.youtube.com/watch?v=h4yyi1DAl1Q" target="_blank">Youtube</a>
+                <li class="sub-menu__item">
+                  <a href="https://www.instagram.com/mansurbear/" target="_blank">Instagram</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="menu__content">
-          menu content2
-        </div>
-      </div>
+          <div class="menu__content">
+            menu content2
+          </div>
 
-    </div>
-  </section>
-  <footer class ="container footer">
-    <div class="footer__text">
-      <span>copyright Mansur Bear</span>
-    </div>
-    <div class="footer__social-media">
-      <span>Follow Mansur in social media!</span>
-      <div class="footer__social-media__items">
-      @@include('./partials/footer-sprites/_footer-sprites.html', {
-        "url": "https://www.youtube.com/watch?v=h4yyi1DAl1Q", "imgPath": "img/youtube-.png"
+        </div>
+
+      </div>
+    </section>
+    <footer class="container footer">
+      <div class="footer__text">
+        <span>copyright Mansur Bear</span>
+      </div>
+      <div class="footer__social-media">
+        <span>Follow Mansur in social media!</span>
+        <div class="footer__social-media__items">
+          @@include('./partials/footer-sprites/_footer-sprites.html', {
+          "url": "https://www.youtube.com/watch?v=h4yyi1DAl1Q", "imgPath": "img/youtube-.png"
           })
 
           @@include('./partials/footer-sprites/_footer-sprites.html', {
-            "url": "https://www.facebook.com/mansurbear", "imgPath": "img/facebook-.png"
-              })
-           
-              @@include('./partials/footer-sprites/_footer-sprites.html', {
-                "url": "https://www.instagram.com/mansurbear/", "imgPath": "img/instagram-.png"
-                  })
-                
-                </div>
-    </div>
-  </footer>
-</div>
+          "url": "https://www.facebook.com/mansurbear", "imgPath": "img/facebook-.png"
+          })
+
+          @@include('./partials/footer-sprites/_footer-sprites.html', {
+          "url": "https://www.instagram.com/mansurbear/", "imgPath": "img/instagram-.png"
+          })
+
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
