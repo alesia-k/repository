@@ -274,19 +274,19 @@ input {
 }
 
 @media (max-width: 992px){
-  .container{
+  .container, .menu{
     max-width: 750px;
   }
 }
 
 @media (max-width: 767px){
-  .container{
+  .container .menu{
     max-width: none;
   }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-  .container{
+  .container .menu{
     max-width: 320;
   }
 }
