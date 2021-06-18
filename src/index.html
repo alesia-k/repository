@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>First project</title>
+  <script src="https://kit.fontawesome.com/a1e203170d.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -47,20 +48,35 @@
 
         </form>
       </div>
-      <div class="main-menu">
-        @@include('./partials/menu/_menu.html', {
-        "item": "contacts"
-        })
-        @@include('./partials/menu/_menu.html', {
-        "item": "e-shop"
-        })
-        @@include('./partials/menu/_menu.html', {
-        "item": "faq"
-        })
-        @@include('./partials/menu/_menu.html', {
-        "item": "home"
-        })
-      </div>
+
+      <nav class="burger-menu mobile-open">
+        <button class="burger-menu__btn-mobile">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            @@include('./partials/menu/_menu.html', {
+            "item": "contacts"
+          })
+          </li>
+          <li class="burger-menu__item">
+            @@include('./partials/menu/_menu.html', {
+            "item": "e-shop"
+            })
+          </li>
+          <li class="burger-menu__item">
+            @@include('./partials/menu/_menu.html', {
+            "item": "faq"
+          })
+          </li>
+          <li class="burger-menu__item">
+            @@include('./partials/menu/_menu.html', {
+            "item": "home"
+          })
+          </li>
+        </ul>
+      </nav>
+
     </header>
 
     <div class="container banner">
@@ -86,7 +102,7 @@
           perPage: 1,
           speed: 2000,
           arrows: true,
-          autoplay: true,
+          //autoplay: true,
           interval: '3000',
           arrows: true,
           pagination: false,
@@ -130,7 +146,8 @@
         <div class="left-column__item">
           @@include('./partials/left column/_left-column.html', {
           "biographyPicturePath": "/img/home--.jpg", "caption": "Home sweet home",
-          "text": "After long trip to home airfield Mansur jumped out the car and run to enclosure. Mansur started to examine its place - smelling everything and checking what was going on here while he was out. Pilots gathered to discuss what to do now and after debates decided to leave Mansur in Orlovka airfield for bear's safety. - We studied the issue, the best conditions of treating the bears in captivity is in Moscow Zoo at the moment, we got an expert advices from there and now we are trying to treat Mansur in similar ways- Andrey states.", "direction": "", "modificator": ""
+          "text": "After long trip to home airfield Mansur jumped out the car and run to enclosure. Mansur started to examine its place - smelling everything and checking what was going on here while he was out. Pilots gathered to discuss what to do now and after debates decided to leave Mansur in Orlovka airfield for bear's safety. - We studied the issue, the best conditions of treating the bears in captivity is in Moscow Zoo at the moment, we got an expert advices from there and now we are trying to treat Mansur in similar ways- Andrey states.",
+          "direction": "", "modificator": ""
           })
         </div>
 
@@ -205,23 +222,23 @@
         </div>
         <div class="footer-menu">
 
-          <div class="menu__item">
+          <div class="advertising-menu__item">
             Come and see more!
-            <div class="menu__content">
-              <ul class="sub-menu">
-                <li class="sub-menu__item">
+            <div class="advertising-menu__content">
+              <ul class="sub-advertising-menu">
+                <li class="sub-advertising-menu__item">
                   <a href="https://www.facebook.com/mansurbear" target="_blank">Facebook</a>
                 </li>
-                <li class="sub-menu__item">
+                <li class="sub-advertising-menu__item">
                   <a href="https://www.youtube.com/watch?v=h4yyi1DAl1Q" target="_blank">Youtube</a>
-                <li class="sub-menu__item">
+                <li class="sub-advertising-menu__item">
                   <a href="https://www.instagram.com/mansurbear/" target="_blank">Instagram</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="menu__content">
-            menu content2
+          <div class="advertising-menu__content">
+            content2
           </div>
 
         </div>
