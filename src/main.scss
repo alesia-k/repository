@@ -361,3 +361,29 @@ input {
     width: 33,33%;
   }
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .container {
+    max-width: 320;
+  }
+}
+
+@media (max-width: 592px) {
+  .feedback input, .advertising-menu__item, .footer-button {
+  width: 89%;
+  }
+}
+
+@media (max-width: 767px) {
+  .advertising-menu__content {
+  left: 20%;
+  top: 100%;
+  }
+}
+
+@media (max-width: 545px) {
+  .advertising-menu__content {
+  left: 3%;
+  top: 110%;
+  }
+}
