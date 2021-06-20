@@ -71,6 +71,15 @@ input {
     display: flex;
     margin: 0;
 
+    &.open {
+      @media all and (max-width: 568px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+      }
+    }
+
   @media all and (max-width: 568px) {
    width: 100%;
    position: absolute;
@@ -117,7 +126,7 @@ input {
   width: 30%;
   }
 
-  .burger-menu:hover .burger-menu__list {
+  .burger-menu .burger-menu__list {
     display: block;
     }
 }
