@@ -1,0 +1,35 @@
+.header {
+    
+    &__content {
+    max-width: 1052px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    }
+}
+
+.menu__list {
+    height: 82px;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+    li {
+        margin: 0px 0px 0px 33px;
+    }
+}
+
+    .menu__link {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease 0s;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+   
+    &:hover {
+        color: #ff6464;
+    }
+    }
+    

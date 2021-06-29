@@ -1,3 +1,73 @@
+@import "header.scss";
+@import "home.scss";
+@import "icons.scss";
+@import "./fonts/icons.ttf";
+@import "style.scss";
+@font-face {
+    font-family: 'Heebo';
+    src: url('/fonts/Heebo-Medium.ttf');
+}
+
 body * {
   outline: 1px solid lightgrey;
+}
+
+// переменные
+$minWidth: 320px;
+$maxWidth: 1152;
+$maxWidthContainer: 856;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98;
+
+._container {
+max-width: $maxWidthContainer + px;
+margin: 0 auto;
+@media (max-width: $md1+px) {
+    max-width: 970px;
+}
+@media (max-width: $md2+px) {
+    max-width: 750px;
+}
+@media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+}
+}
+
+.page {
+    padding: 90px 0px 0px 0px;
+    flex: 1 1 auto;
+    @media (max-width: $md3+px) {
+        padding: 30px 0px 0px 0px; 
+    }
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #21243d;
+    font-family: "Heebo";
+    line-height: 60px / 44px * 100%;
+    
+    @media (max-width: $md3+px) {
+        font-size: 32px;
+    }
+}
+
+.text {
+    font-family: "Heebo", sans-serif;
+    color: #21243d;
+    line-height: 23 / 16 * 100%;
+}
+
+.title-posts {
+    font-size: 22px;
+    font-family: "Heebo", sans-serif;
+    
+    @media (max-width: $md3) {
+        text-align: center;
+        font-size: 18px;
+    }
 }
