@@ -1,3 +1,28 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.wrapper {
+  max-width: 1200px;
+}
+
+._container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.description {
+  display: flex;
+  width: 100%;
+}
+
+
+.description-text {
+  width: 700px;
+}
+
+.description-img {
+  //width: 300px;
+  
+  border: 2px solid coral;
+  }
