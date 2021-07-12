@@ -8,9 +8,9 @@ html {
   background-color: antiquewhite;
 }
 
-.wrapper {
+/*.wrapper {
   max-width: 1200px;
-}
+}*/
 
 ._container {
   max-width: 1000px;
@@ -24,6 +24,7 @@ html {
 .description-img {
     flex-basis: 40%;
     text-align: right;
+    margin: auto;
         
         img {
           max-width: 100%;
@@ -50,10 +51,15 @@ html {
     color: #676767;
   }
 
+  .skiing-icon-caption {
+    display: flex;
+  }
+
   .skiing__items {
     display: flex;
     //width: 100%;
     position: relative;
+    
 
     &__first {
       margin-right: 18px;
@@ -68,10 +74,9 @@ html {
     width: 100%;
   }
 
-    .skiing__icon, .tours__icon {
+    .skiing__icon, .tours__icon, .wine__icon {
       margin: 0px 15px 0px 0px;
     }
-
 
     .tours__column {
       display: flex;
@@ -82,10 +87,13 @@ html {
     .tours__caption {
       color: #676767;
     }
+
+    .tours-icon-caption {
+      display: flex;
+    }
   
     .tours__items {
       display: flex;
-      //width: 100%;
       position: relative;
   
       &__first {
@@ -101,12 +109,39 @@ html {
       width: 100%;
     }
 
+    .wine-icon-caption {
+      display: flex;
+    }
 
-  
+    .tours__column {
+      margin-top: 25px;;
+    }
 
+    .wine__column {
+      margin-top: 25px;
+    }
 
-   
+.wine__items {
+  display: flex;
 
- 
+  &__first {
+    margin-right: 18px;
+  }
 
-  
+  &__second {
+    margin-right: 18px;
+  }
+}
+
+.wine__items img {
+  width: 100%;
+}
+
+.wine__caption {
+  color: #676767;
+}
+
+.footer {
+  background-image: url("./img/footer-bg.jpg");
+  min-height: 150px;
+}
